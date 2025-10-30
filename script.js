@@ -110,6 +110,7 @@
                     
                     window.requestAnimationFrame(step);
 
+
                     // Stop observing this element after it has animated once
                     counterObserver.unobserve(entry.target);
 
@@ -440,7 +441,7 @@
         window.toggleAppsProjects = () => toggleProjects('apps');
 
         // Language System
-        let currentLanguage = 'en';
+        let currentLanguage = 'id';
         let isLanguageSwitching = false;
         
         const translations = {
