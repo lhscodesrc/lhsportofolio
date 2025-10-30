@@ -1,7 +1,13 @@
- // Mobile menu toggle
-        function toggleMobileMenu() {
-            const menu = document.getElementById('mobile-menu');
-            menu.classList.toggle('hidden');
+document.addEventListener('DOMContentLoaded', () => {
+    try {
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        if (mobileMenuBtn && mobileMenu) {
+            mobileMenuBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
         }
 
         // Smooth scrolling for navigation links
@@ -16,7 +22,9 @@
                     });
                 }
                 // Close mobile menu if open
-                document.getElementById('mobile-menu').classList.add('hidden');
+                if (!mobileMenu.classList.contains('hidden')) {
+                    mobileMenu.classList.add('hidden');
+                }
             });
         });
 
@@ -368,9 +376,6 @@
             }
         }
 
-        // Make toggleProjectCard globally available
-        window.toggleProjectCard = toggleProjectCard;
-
         // Skills toggle functionality
         function toggleSkills() {
             const hiddenSkills = document.getElementById('hidden-skills');
@@ -406,9 +411,6 @@
             }
         }
         
-        // Make toggleSkills globally available
-        window.toggleSkills = toggleSkills;
-
         // Generic project toggle functionality
         function toggleProjects(category) {
             const hiddenProjects = document.getElementById(`${category}-projects-hidden`);
@@ -435,11 +437,19 @@
             }
         }
         
-        // Make the generic function available globally
-        window.toggleDesignProjects = () => toggleProjects('design');
-        window.toggleMotionProjects = () => toggleProjects('motion');
-        window.toggleAppsProjects = () => toggleProjects('apps');
+        // Add event listeners to all toggle buttons
+        const skillsToggleBtn = document.getElementById('skills-toggle-btn');
+        if (skillsToggleBtn) skillsToggleBtn.addEventListener('click', toggleSkills);
 
+        const designToggleBtn = document.getElementById('design-projects-toggle');
+        if (designToggleBtn) designToggleBtn.addEventListener('click', () => toggleProjects('design'));
+
+        const motionToggleBtn = document.getElementById('motion-projects-toggle');
+        if (motionToggleBtn) motionToggleBtn.addEventListener('click', () => toggleProjects('motion'));
+
+        const appsToggleBtn = document.getElementById('apps-projects-toggle');
+        if (appsToggleBtn) appsToggleBtn.addEventListener('click', () => toggleProjects('apps'));
+        
         // Language System
         let currentLanguage = 'id';
         let isLanguageSwitching = false;
@@ -638,7 +648,7 @@
                 'show-more-skills': 'Show More',
                 'show-less-skills': 'Hide',
                 'all-skills': 'All Skills',
-                'learn-more-btn': 'Learn More',
+                'learn-more-btn': 'More Info',
                 'show-more-design-projects': 'More Design & Graphics projects',
                 'show-less-design-projects': 'Hide Design & Graphics projects',
                 
@@ -902,3 +912,7 @@
                 mapToEditPanelValues
             });
         }
+    } catch (error) {
+        console.error("An error occurred during script initialization:", error);
+    }
+});

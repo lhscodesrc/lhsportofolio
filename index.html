@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lalu Habib Sasiwimbe - Portfolio</title>
+  <link rel="icon" type="image/png" href="/images/favicon.png">
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
@@ -30,7 +31,7 @@
       </div>
      </div>
      <!-- Mobile Menu Button -->
-     <button class="md:hidden" onclick="toggleMobileMenu()">
+     <button id="mobile-menu-btn" class="md:hidden">
       <svg class="w-6 h-6" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
       </svg></button>
     </div>
@@ -681,7 +682,7 @@
        </div>
       </div>
       <!-- Toggle Button for Design Projects -->
-      <div class="text-center"><button id="design-projects-toggle" onclick="toggleDesignProjects()" class="text-blue-600 font-bold hover:text-blue-700 transition-colors duration-300 cursor-pointer flex items-center gap-2 mx-auto" style="color: #202864;"> <span data-id="show-more-design-projects">Lebih banyak project Desain Grafis</span>
+      <div class="text-center"><button id="design-projects-toggle" class="text-blue-600 font-bold hover:text-blue-700 transition-colors duration-300 cursor-pointer flex items-center gap-2 mx-auto" style="color: #202864;"> <span data-id="show-more-design-projects">Lebih banyak project Desain Grafis</span>
         <svg class="w-4 h-4 transition-transform duration-300" id="design-projects-toggle-icon" fill="currentColor" viewbox="0 0 20 20"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
         </svg></button>
       </div>
@@ -706,7 +707,6 @@
          <h4 class="text-lg font-bold text-blue-900 mb-2" data-id="motion-project-1-title">Video Animasi Edukasi "SADANIS"</h4>
          <p class="text-slate-600 text-sm mb-4" data-id="motion-project-1-desc">Memimpin produksi penuh video animasi 6 menit. Menerjemahkan naskah medis kompleks (pemeriksaan payudara klinis) menjadi visual yang jelas, informatif, dan mudah dipahami oleh audiens awam dari konsep hingga final.</p>
          <!-- NOTE: GOOGLE DRIVE LINK PLACEHOLDER - Replace # with actual link -->
-         <a href="#" target="_blank" rel="noopener noreferrer" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300 transform hover:scale-105 inline-flex items-center gap-2 mx-auto" style="background-color: #202864;" data-id="learn-more-btn"> <span>Lebih Lanjut</span>
          <a href="https://drive.google.com/file/d/11aJbyadm4jI-qvKjBtd2bcXJ4cH3dcfD/edit" target="_blank" rel="noopener noreferrer" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300 transform hover:scale-105 inline-flex items-center gap-2 mx-auto" style="background-color: #202864;" data-id="learn-more-btn"> <span>Lebih Lanjut</span>
           <svg class="w-4 h-4" fill="currentColor" viewbox="0 0 20 20"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
           </svg></a>
@@ -720,7 +720,6 @@
          <h4 class="text-lg font-bold text-blue-900 mb-2" data-id="motion-project-2-title">Serial Video Dokumenter (Pengabdian Masyarakat)</h4>
          <p class="text-slate-600 text-sm mb-4" data-id="motion-project-2-desc">Memproduksi serial video dokumenter yang menangkap esensi program pemberdayaan masyarakat. Mengubah kegiatan lapangan (Labkes Mini, SIGATBC, Ramuan Rajalom) menjadi cerita visual yang kuat dan inspiratif.</p>
          <!-- NOTE: GOOGLE DRIVE LINK PLACEHOLDER - Replace # with actual link -->
-         <a href="#" target="_blank" rel="noopener noreferrer" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300 transform hover:scale-105 inline-flex items-center gap-2 mx-auto" style="background-color: #202864;" data-id="learn-more-btn"> <span>Lebih Lanjut</span>
          <a href="https://www.linkedin.com/in/lalu-habib-sasiwimbe-37b02632a/details/projects/?profileUrn=urn%3Ali%3Afsd_profile%3AACoAAFLw7I8BmAuXRzaX39MCGydxUNIrPc1e6gg" target="_blank" rel="noopener noreferrer" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300 transform hover:scale-105 inline-flex items-center gap-2 mx-auto" style="background-color: #202864;" data-id="learn-more-btn"> <span>Lebih Lanjut</span>
           <svg class="w-4 h-4" fill="currentColor" viewbox="0 0 20 20"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
           </svg></a>
@@ -734,7 +733,6 @@
          <h4 class="text-lg font-bold text-blue-900 mb-2" data-id="motion-project-3-title">Video Animasi "MENJADI" (Pencegahan Diabetes)</h4>
          <p class="text-slate-600 text-sm mb-4" data-id="motion-project-3-desc">Mengelola siklus produksi penuh untuk video edukasi diabetes. Menerjemahkan faktor risiko dan metode pencegahan yang kompleks menjadi alur cerita animasi yang informatif dan praktis bagi audiens dewasa/lansia.</p>
          <!-- NOTE: GOOGLE DRIVE LINK PLACEHOLDER - Replace # with actual link -->
-         <a href="#" target="_blank" rel="noopener noreferrer" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300 transform hover:scale-105 inline-flex items-center gap-2 mx-auto" style="background-color: #202864;" data-id="learn-more-btn"> <span>Lebih Lanjut</span>
          <a href="https://drive.google.com/file/d/1UnOif8iyeP6ddRBO2gCfQHYz__KgzqO4/edit" target="_blank" rel="noopener noreferrer" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300 transform hover:scale-105 inline-flex items-center gap-2 mx-auto" style="background-color: #202864;" data-id="learn-more-btn"> <span>Lebih Lanjut</span>
           <svg class="w-4 h-4" fill="currentColor" viewbox="0 0 20 20"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
           </svg></a>
@@ -751,7 +749,6 @@
          <h4 class="text-lg font-bold text-blue-900 mb-2" data-id="motion-project-4-title">Video Animasi "CERDAS" (Gaya Flipbook)</h4>
          <p class="text-slate-600 text-sm mb-4" data-id="motion-project-4-desc">Mengelola produksi end-to-end untuk video edukasi pencegahan anemia. Mengeksekusi konsep unik flipbook-style mulai dari naskah, storyboard, hingga menjadi animasi final yang dinamis dan menarik.</p>
          <!-- NOTE: GOOGLE DRIVE LINK PLACEHOLDER - Replace # with actual link -->
-         <a href="#" target="_blank" rel="noopener noreferrer" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300 transform hover:scale-105 inline-flex items-center gap-2 mx-auto" style="background-color: #202864;" data-id="learn-more-btn"> <span>Lebih Lanjut</span>
          <a href="https://drive.google.com/file/d/1CZU5CSepl9Izu7G4NtUyjcy1JfDan2KQ/edit" target="_blank" rel="noopener noreferrer" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300 transform hover:scale-105 inline-flex items-center gap-2 mx-auto" style="background-color: #202864;" data-id="learn-more-btn"> <span>Lebih Lanjut</span>
           <svg class="w-4 h-4" fill="currentColor" viewbox="0 0 20 20"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
           </svg></a>
@@ -765,7 +762,6 @@
          <h4 class="text-lg font-bold text-blue-900 mb-2" data-id="motion-project-5-title">Video Animasi "Persalinan Normal vs. Sesar"</h4>
          <p class="text-slate-600 text-sm mb-4" data-id="motion-project-5-desc">Meneliti topik, menyusun konsep naratif, dan menulis naskah untuk video animasi 3 menit. Menggunakan gaya bahasa non-formal untuk memberdayakan ibu hamil dengan informasi yang akurat dan berimbang.</p>
          <!-- NOTE: GOOGLE DRIVE LINK PLACEHOLDER - Replace # with actual link -->
-         <a href="#" target="_blank" rel="noopener noreferrer" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300 transform hover:scale-105 inline-flex items-center gap-2 mx-auto" style="background-color: #202864;" data-id="learn-more-btn"> <span>Lebih Lanjut</span>
          <a href="https://drive.google.com/file/d/1N76Qkv0ABbApmwAU0LxmsDHIvu6KP5lo/edit" target="_blank" rel="noopener noreferrer" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300 transform hover:scale-105 inline-flex items-center gap-2 mx-auto" style="background-color: #202864;" data-id="learn-more-btn"> <span>Lebih Lanjut</span>
           <svg class="w-4 h-4" fill="currentColor" viewbox="0 0 20 20"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
           </svg></a>
@@ -779,7 +775,6 @@
          <h4 class="text-lg font-bold text-blue-900 mb-2" data-id="motion-project-6-title">Video Edukasi "Remaja Sehat Itu Keren"</h4>
          <p class="text-slate-600 text-sm mb-4" data-id="motion-project-6-desc">Video edukasi 7 menit yang mencakup prinsip gizi seimbang, pesan diet utama, hingga kebutuhan kalori spesifik untuk remaja (termasuk zat besi &amp; folat).</p>
          <!-- NOTE: GOOGLE DRIVE LINK PLACEHOLDER - Replace # with actual link -->
-         <a href="#" target="_blank" rel="noopener noreferrer" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300 transform hover:scale-105 inline-flex items-center gap-2 mx-auto" style="background-color: #202864;" data-id="learn-more-btn"> <span>Lebih Lanjut</span>
          <a href="https://drive.google.com/file/d/1g7g0ZvCYtOoosy1glqbg2s1zfRqcAGem/edit" target="_blank" rel="noopener noreferrer" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300 transform hover:scale-105 inline-flex items-center gap-2 mx-auto" style="background-color: #202864;" data-id="learn-more-btn"> <span>Lebih Lanjut</span>
           <svg class="w-4 h-4" fill="currentColor" viewbox="0 0 20 20"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
           </svg></a>
@@ -787,7 +782,7 @@
        </div>
       </div>
       <!-- Toggle Button for Motion Projects -->
-      <div class="text-center"><button id="motion-projects-toggle" onclick="toggleMotionProjects()" class="text-blue-600 font-bold hover:text-blue-700 transition-colors duration-300 cursor-pointer flex items-center gap-2 mx-auto" style="color: #202864;"> <span data-id="show-more-motion-projects">Lebih banyak project Motion Grafis &amp; Video</span>
+      <div class="text-center"><button id="motion-projects-toggle" class="text-blue-600 font-bold hover:text-blue-700 transition-colors duration-300 cursor-pointer flex items-center gap-2 mx-auto" style="color: #202864;"> <span data-id="show-more-motion-projects">Lebih banyak project Motion Grafis &amp; Video</span>
         <svg class="w-4 h-4 transition-transform duration-300" id="motion-projects-toggle-icon" fill="currentColor" viewbox="0 0 20 20"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
         </svg></button>
       </div>
@@ -861,7 +856,7 @@
        </div>
       </div>
       <!-- Toggle Button for Apps Projects -->
-      <div class="text-center"><button id="apps-projects-toggle" onclick="toggleAppsProjects()" class="text-blue-600 font-bold hover:text-blue-700 transition-colors duration-300 cursor-pointer flex items-center gap-2 mx-auto" style="color: #202864;"> <span data-id="show-more-apps-projects">Lebih banyak project Aplikasi &amp; Website</span>
+      <div class="text-center"><button id="apps-projects-toggle" class="text-blue-600 font-bold hover:text-blue-700 transition-colors duration-300 cursor-pointer flex items-center gap-2 mx-auto" style="color: #202864;"> <span data-id="show-more-apps-projects">Lebih banyak project Aplikasi &amp; Website</span>
         <svg class="w-4 h-4 transition-transform duration-300" id="apps-projects-toggle-icon" fill="currentColor" viewbox="0 0 20 20"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
         </svg></button>
       </div>
@@ -933,7 +928,7 @@
   <!-- Footer Start -->
   <footer class="bg-blue-900 text-white py-8" style="background-color: #202864;">
    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-    <p class="text-blue-200" data-id="footer-text">© 2025 Lalu Habib Sasiwimbe. LHSCode.</p>
+    <p class="text-blue-200" data-id="footer-text">© 2025 Lalu Habib Sasiwimbe. Dibuat dengan ❤️ untuk berbagi karya dan pengalaman.</p>
    </div>
   </footer>
   <!-- Footer End -->
