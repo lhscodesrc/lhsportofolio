@@ -1,0 +1,945 @@
+<!doctype html>
+<html lang="id" class="scroll-smooth">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lalu Habib Sasiwimbe - Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="/_sdk/element_sdk.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>@view-transition { navigation: auto; }</style>
+  <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
+ </head>
+ <body class="bg-slate-50 text-slate-800">
+  <!-- =================================================================== -->
+  <!-- Navigation Start -->
+  <nav class="fixed top-0 w-full bg-white/90 backdrop-blur-md z-50 border-b border-slate-200">
+   <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between items-center h-16"><!-- Logo -->
+     <div class="flex items-center">
+      <div class="w-10 h-10 bg-gradient-to-br from-blue-600 to-purple-600 rounded-lg flex items-center justify-center" style="background: linear-gradient(135deg, #202864 0%, #4f53eb 100%);">
+       <svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 303.89 321.16" class="h-8 w-auto text-white" fill="currentColor"><g id="Layer_1-2" data-name="Layer 1"><g><path d="M297.06,48.19v272.97s-109.69-.36-109.69-.36v-23.38h84.69c1.76,0,1.18-6.5,1.24-7.75,1.56-30.5.24-62.44.36-93.15.12-31.45.51-63.11.75-94.55.08-10.01-.09-20.04-.01-30.04H56.28l-.54-.54V0h215.96l.54.54v23.38l-.54.54H80.02l-.54.54v22.66l.54.54h217.04Z"></path><polygon points="252.82 85.59 252.82 285.91 229.09 285.91 229.09 197.26 228.55 196.72 159.86 196.72 159.32 197.26 159.32 285.19 134.86 285.19 134.86 86.85 135.4 86.31 158.78 86.31 159.32 86.85 159.32 174.25 159.86 174.79 229.09 174.79 229.09 85.59 252.82 85.59"></polygon><polygon points="22.66 2.88 22.66 172.81 23.2 173.35 119.04 173.35 119.04 196 0 196 0 2.88 22.66 2.88"></polygon><polygon points="303.89 .36 303.89 24.1 280.69 24.1 280.16 23.56 280.16 .36 303.89 .36"></polygon><polygon points="158.96 320.08 135.22 320.08 135.22 296.88 135.76 296.34 158.42 296.34 158.96 296.88 158.96 320.08"></polygon></g></g></svg>
+      </div>
+     </div><!-- Desktop Navigation -->
+     <div class="hidden md:flex items-center space-x-8">
+      <a href="#about" class="nav-link text-slate-700 hover:text-blue-900" data-id="nav-about">Tentang</a>
+      <a href="#experience" class="nav-link text-slate-700 hover:text-blue-900" data-id="nav-experience">Pengalaman</a>
+      <a href="#skills" class="nav-link text-slate-700 hover:text-blue-900" data-id="nav-project">Project</a>
+      <a href="#contact" class="nav-link text-slate-700 hover:text-blue-900" data-id="nav-contact">Kontak</a>
+      <!-- Language Switch (Desktop) -->
+      <div class="flex items-center bg-gray-100 rounded-full p-1"><button onclick="switchLanguage('id')" id="lang-id" class="lang-switch-btn px-3 py-1 rounded-full text-sm font-medium bg-blue-600 text-white" style="background-color: #202864;">ID</button> <button onclick="switchLanguage('en')" id="lang-en" class="lang-switch-btn px-3 py-1 rounded-full text-sm font-medium text-gray-600 hover:text-blue-600">EN</button>
+      </div>
+     </div>
+     <!-- Mobile Menu Button -->
+     <button class="md:hidden" onclick="toggleMobileMenu()">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+      </svg></button>
+    </div>
+   </div><!-- Mobile Menu -->
+   <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-slate-200">
+    <div class="px-4 py-2 space-y-2"><a href="#about" class="block py-2 text-slate-700 hover:text-blue-900" data-id="nav-about-mobile">Tentang</a> <a href="#experience" class="block py-2 text-slate-700 hover:text-blue-900" data-id="nav-experience-mobile">Pengalaman</a> <a href="#skills" class="block py-2 text-slate-700 hover:text-blue-900" data-id="nav-project-mobile">Project</a> <a href="#contact" class="block py-2 text-slate-700 hover:text-blue-900" data-id="nav-contact-mobile">Kontak</a>
+     <!-- Language Switch (Mobile) -->
+     <div class="flex items-center justify-center bg-gray-100 rounded-full p-1 mt-4"><button onclick="switchLanguage('id')" id="lang-id-mobile" class="lang-switch-btn px-3 py-1 rounded-full text-sm font-medium bg-blue-600 text-white" style="background-color: #202864;">ID</button> <button onclick="switchLanguage('en')" id="lang-en-mobile" class="lang-switch-btn px-3 py-1 rounded-full text-sm font-medium text-gray-600 hover:text-blue-600">EN</button>
+     </div>
+    </div>
+   </div>
+  </nav>
+  <!-- Navigation End -->
+  <!-- =================================================================== -->
+  <!-- =================================================================== -->
+  <!-- Hero Section Start -->
+  <section id="home" class="min-h-screen gradient-bg flex items-center justify-center relative overflow-hidden">
+   <div class="absolute inset-0 bg-black/10"></div>
+   <div class="relative z-10 text-center text-white px-4 sm:px-6 lg:px-8 pt-16">
+    <div class="fade-in">
+     <h1 class="text-4xl sm:text-5xl lg:text-7xl font-bold mb-6" id="hero-name" data-id="hero-name">Lalu Habib Sasiwimbe</h1>
+     <p class="text-xl sm:text-2xl lg:text-3xl mb-8 text-blue-100" id="hero-tagline" data-id="hero-tagline">Fresh Graduate   |   Desainer Grafis   |   Programmer</p>
+     <div class="flex flex-col sm:flex-row gap-4 justify-center">
+      <a href="#about" class="bg-yellow-500 hover:bg-yellow-600 text-blue-900 px-8 py-3 rounded-full font-semibold transition-all duration-300 transform hover:scale-105" data-id="hero-portfolio-btn"> Lihat Portfolio </a>
+      <a href="#contact" class="border-2 border-white text-white hover:bg-white hover:text-blue-900 px-8 py-3 rounded-full font-semibold transition-all duration-300" data-id="hero-contact-btn"> Hubungi Saya </a>
+     </div>
+    </div>
+   </div>
+   <!-- Large Background Logo -->
+   <div class="absolute inset-0 flex items-center justify-center overflow-hidden pointer-events-none">
+    <svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 303.89 321.16" class="w-2/3 h-2/3 text-white opacity-5" fill="currentColor"><g id="Layer_1-2" data-name="Layer 1"><g><path d="M297.06,48.19v272.97s-109.69-.36-109.69-.36v-23.38h84.69c1.76,0,1.18-6.5,1.24-7.75,1.56-30.5.24-62.44.36-93.15.12-31.45.51-63.11.75-94.55.08-10.01-.09-20.04-.01-30.04H56.28l-.54-.54V0h215.96l.54.54v23.38l-.54.54H80.02l-.54.54v22.66l.54.54h217.04Z"></path><polygon points="252.82 85.59 252.82 285.91 229.09 285.91 229.09 197.26 228.55 196.72 159.86 196.72 159.32 197.26 159.32 285.19 134.86 285.19 134.86 86.85 135.4 86.31 158.78 86.31 159.32 86.85 159.32 174.25 159.86 174.79 229.09 174.79 229.09 85.59 252.82 85.59"></polygon><polygon points="22.66 2.88 22.66 172.81 23.2 173.35 119.04 173.35 119.04 196 0 196 0 2.88 22.66 2.88"></polygon><polygon points="303.89 .36 303.89 24.1 280.69 24.1 280.16 23.56 280.16 .36 303.89 .36"></polygon><polygon points="158.96 320.08 135.22 320.08 135.22 296.88 135.76 296.34 158.42 296.34 158.96 296.88 158.96 320.08"></polygon></g></g></svg>
+   </div>
+  </section>
+  <!-- Hero Section End -->
+  <!-- =================================================================== -->
+  <!-- =================================================================== -->
+  <!-- About Section Start -->
+  <section id="about" class="py-20 bg-white">
+   <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <!-- Section Title -->
+    <div class="text-center mb-16 fade-in">
+     <h2 class="text-4xl font-bold text-blue-900 mb-4" id="about-title" data-id="about-title">Tentang Saya</h2>
+     <div class="w-24 h-1 bg-yellow-500 mx-auto"></div>
+    </div>
+    <div class="grid lg:grid-cols-2 gap-12 items-center">
+     <!-- Left Column: Profile Card -->
+     <div class="slide-in-left fade-in-delay-1">
+      <div class="relative overflow-hidden bg-gradient-to-br from-blue-900 to-blue-700 p-8 rounded-2xl text-white" style="background: linear-gradient(135deg, #202864 0%, #4f53eb 100%);">
+       <!-- Background Image Overlay (Adjusted to show face) -->
+       <div class="absolute inset-0 bg-cover opacity-5" style="background-image: url('images/profile/Profile2.webp'); background-position: center top;"></div>
+       <div class="relative z-10">
+        <h3 class="text-2xl font-bold mb-6 bounce-in" style="animation-delay: 0.3s;" data-id="about-profile">Profil</h3>
+        <div class="flex flex-col sm:flex-row items-center gap-6 mb-6">
+         <!-- Photo Profile -->
+         <div class="w-24 h-24 sm:w-28 sm:h-28 flex-shrink-0 bg-white/20 rounded-full flex items-center justify-center border-4 border-yellow-500 scale-in overflow-hidden" style="animation-delay: 0.5s;">
+          <img src="images/profile/Profile.webp" alt="Profile Habib" class="w-full h-full object-cover">
+         </div>
+         <!-- Name and Education -->
+         <div class="text-center sm:text-left">
+          <p class="text-xl font-bold text-white">Lalu Habib Sasiwimbe, S.Tr.Kes</p>
+          <p class="text-sm text-blue-200">Teknologi Laboratorium Medis - Poltekkes Kemenkes Mataram</p>
+         </div>
+         </div>
+         <p class="text-blue-100 leading-relaxed mb-6 fade-in" id="about-description" data-id="about-description" style="animation-delay: 0.7s;">Lulusan Ilmu Kesehatan dengan keahlian beragam di domain teknis dan kreatif. Menggabungkan pengetahuan ilmu kesehatan dengan keahlian teknologi untuk menciptakan solusi digital yang inovatif.</p>
+        <div class="flex flex-wrap gap-2"><span class="bg-yellow-500 text-blue-900 px-3 py-1 rounded-full text-sm font-medium bounce-in" style="animation-delay: 0.9s;" data-id="tag-health">Ilmu Kesehatan</span> <span class="bg-yellow-500 text-blue-900 px-3 py-1 rounded-full text-sm font-medium bounce-in" style="animation-delay: 1.0s;" data-id="tag-design">Desain Grafis</span> <span class="bg-yellow-500 text-blue-900 px-3 py-1 rounded-full text-sm font-medium bounce-in" style="animation-delay: 1.1s;" data-id="tag-software">Pengembangan Aplikasi</span>
+        </div>
+        </div>
+      </div>
+     </div><!-- Right Column: Core Skills -->
+     <div class="slide-in-right fade-in-delay-2">
+      <h3 class="text-2xl font-bold text-blue-900 mb-6 bounce-in" style="animation-delay: 0.4s;" data-id="about-skills-title">Keahlian Inti</h3>
+      <div class="space-y-6" id="skills-container">
+       <!-- Skill Item: Desain Grafis -->
+       <div class="skill-item" style="animation-delay: 0.6s;">
+        <div class="flex items-center justify-between mb-3">
+         <div class="flex items-center">
+          <div class="w-8 h-8 bg-yellow-500 rounded-lg flex items-center justify-center mr-3">
+           <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" fill="currentColor" class="w-5 h-5 text-blue-900"><path fill-rule="evenodd" d="M1.5 6a2.25 2.25 0 0 1 2.25-2.25h16.5A2.25 2.25 0 0 1 22.5 6v12a2.25 2.25 0 0 1-2.25 2.25H3.75A2.25 2.25 0 0 1 1.5 18V6ZM3 16.06V18c0 .414.336.75.75.75h16.5A.75.75 0 0 0 21 18v-1.94l-2.69-2.689a1.5 1.5 0 0 0-2.12 0l-.88.879.97.97a.75.75 0 1 1-1.06 1.06l-5.16-5.159a1.5 1.5 0 0 0-2.12 0L3 16.061Zm10.125-7.81a1.125 1.125 0 1 1 2.25 0 1.125 1.125 0 0 1-2.25 0Z" clip-rule="evenodd"></path></svg>
+          </div><span class="font-semibold text-slate-700" data-id="skill-graphic">Desain Grafis</span>
+         </div><span class="text-yellow-600 font-medium text-sm" data-id="level-expert">Ahli</span>
+        </div>
+        <div class="bg-slate-200 rounded-full h-3">
+         <div class="skill-bar h-3 rounded-full" style="width: 95%; animation-delay: 1.0s;"></div>
+        </div>
+       </div>
+       <!-- Skill Item: Motion Graphics -->
+       <div class="skill-item" style="animation-delay: 0.7s;">
+        <div class="flex items-center justify-between mb-3">
+         <div class="flex items-center">
+          <div class="w-8 h-8 bg-yellow-500 rounded-lg flex items-center justify-center mr-3">
+           <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" fill="currentColor" class="w-5 h-5 text-blue-900"><path d="M4.5 4.5a3 3 0 0 0-3 3v9a3 3 0 0 0 3 3h8.25a3 3 0 0 0 3-3v-9a3 3 0 0 0-3-3H4.5ZM19.94 18.75l-2.69-2.69V7.94l2.69-2.69c.944-.945 2.56-.276 2.56 1.06v11.38c0 1.336-1.616 2.005-2.56 1.06Z"></path></svg>
+          </div><span class="font-semibold text-slate-700" data-id="skill-motion">Motion Grafis</span>
+         </div><span class="text-yellow-600 font-medium text-sm" data-id="level-advanced">Tingkat Lanjut</span>
+        </div>
+        <div class="bg-slate-200 rounded-full h-3">
+         <div class="skill-bar h-3 rounded-full" style="width: 75%; animation-delay: 1.1s;"></div>
+        </div>
+       </div>
+       <!-- Skill Item: Pengembangan Aplikasi -->
+       <div class="skill-item" style="animation-delay: 0.8s;">
+        <div class="flex items-center justify-between mb-3">
+         <div class="flex items-center">
+          <div class="w-8 h-8 bg-yellow-500 rounded-lg flex items-center justify-center mr-3">
+           <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" fill="currentColor" class="w-5 h-5 text-blue-900"><path fill-rule="evenodd" d="M2.25 6a3 3 0 0 1 3-3h13.5a3 3 0 0 1 3 3v12a3 3 0 0 1-3 3H5.25a3 3 0 0 1-3-3V6Zm3.97.97a.75.75 0 0 1 1.06 0l2.25 2.25a.75.75 0 0 1 0 1.06l-2.25 2.25a.75.75 0 0 1-1.06-1.06l1.72-1.72-1.72-1.72a.75.75 0 0 1 0-1.06Zm4.28 4.28a.75.75 0 0 0 0 1.5h3a.75.75 0 0 0 0-1.5h-3Z" clip-rule="evenodd"></path></svg>
+          </div><span class="font-semibold text-slate-700" data-id="skill-software">Pengembangan Aplikasi</span>
+         </div><span class="text-yellow-600 font-medium text-sm" data-id="level-advanced">Tingkat Lanjut</span>
+        </div>
+        <div class="bg-slate-200 rounded-full h-3">
+         <div class="skill-bar h-3 rounded-full" style="width: 75%; animation-delay: 1.2s;"></div>
+        </div>
+       </div>
+       <!-- Hidden Skills Container (for "Show More" functionality) -->
+       <div id="hidden-skills" class="space-y-6 max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+        <!-- Skill Item: Microsoft Office -->
+        <div class="skill-item" style="animation-delay: 0.9s;">
+         <div class="flex items-center justify-between mb-3">
+          <div class="flex items-center">
+           <div class="w-8 h-8 bg-yellow-500 rounded-lg flex items-center justify-center mr-3">
+            <svg class="w-5 h-5 text-blue-900" fill="currentColor" viewbox="0 0 20 20"><path fill-rule="evenodd" d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4zm2 6a1 1 0 011-1h6a1 1 0 110 2H7a1 1 0 01-1-1zm1 3a1 1 0 100 2h6a1 1 0 100-2H7z" clip-rule="evenodd" />
+            </svg>
+           </div><span class="font-semibold text-slate-700" data-id="skill-office">Microsoft Office</span>
+          </div><span class="text-yellow-600 font-medium text-sm" data-id="level-expert">Ahli</span>
+         </div>
+         <div class="bg-slate-200 rounded-full h-3">
+          <div class="skill-bar h-3 rounded-full" style="width: 95%; animation-delay: 1.3s;"></div>
+         </div>
+        </div>
+        <!-- Skill Item: Pengembangan Website -->
+        <div class="skill-item" style="animation-delay: 1.0s;">
+         <div class="flex items-center justify-between mb-3">
+          <div class="flex items-center">
+           <div class="w-8 h-8 bg-yellow-500 rounded-lg flex items-center justify-center mr-3">
+            <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" fill="currentColor" class="w-5 h-5 text-blue-900"><path fill-rule="evenodd" d="M2.25 6a3 3 0 0 1 3-3h13.5a3 3 0 0 1 3 3v12a3 3 0 0 1-3 3H5.25a3 3 0 0 1-3-3V6Zm3.97.97a.75.75 0 0 1 1.06 0l2.25 2.25a.75.75 0 0 1 0 1.06l-2.25 2.25a.75.75 0 0 1-1.06-1.06l1.72-1.72-1.72-1.72a.75.75 0 0 1 0-1.06Zm4.28 4.28a.75.75 0 0 0 0 1.5h3a.75.75 0 0 0 0-1.5h-3Z" clip-rule="evenodd"></path></svg>
+           </div><span class="font-semibold text-slate-700" data-id="skill-website">Pengembangan Website</span>
+          </div><span class="text-yellow-600 font-medium text-sm" data-id="level-intermediate">Menengah</span>
+         </div>
+         <div class="bg-slate-200 rounded-full h-3">
+          <div class="skill-bar h-3 rounded-full" style="width: 60%; animation-delay: 1.4s;"></div>
+         </div>
+        </div>
+        <!-- Skill Item: Manajemen Tim -->
+        <div class="skill-item" style="animation-delay: 1.1s;">
+         <div class="flex items-center justify-between mb-3">
+          <div class="flex items-center">
+           <div class="w-8 h-8 bg-yellow-500 rounded-lg flex items-center justify-center mr-3">
+            <svg class="w-5 h-5 text-blue-900" fill="currentColor" viewbox="0 0 20 20"><path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3z" />
+            </svg>
+           </div><span class="font-semibold text-slate-700" data-id="skill-management">Manajemen Tim</span>
+          </div><span class="text-yellow-600 font-medium text-sm" data-id="level-expert">Ahli</span>
+         </div>
+         <div class="bg-slate-200 rounded-full h-3">
+          <div class="skill-bar h-3 rounded-full" style="width: 90%; animation-delay: 1.5s;"></div>
+         </div>
+        </div>
+       </div>
+       <!-- Toggle Button for Skills -->
+       <div class="text-center mt-6"><button id="skills-toggle-btn" onclick="toggleSkills()" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-full font-medium transition-all duration-300 transform hover:scale-105 flex items-center gap-2 mx-auto" style="background-color: #202864;" data-id="show-more-skills"> <span>Tampilkan Lebih Banyak</span>
+         <svg class="w-4 h-4 transition-transform duration-300" id="skills-toggle-icon" fill="currentColor" viewbox="0 0 20 20"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+         </svg></button>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </section>
+  <!-- About Section End -->
+  <!-- =================================================================== -->
+  <!-- =================================================================== -->
+  <!-- Experience Section Start -->
+  <section id="experience" class="py-20 bg-slate-50">
+   <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <!-- Section Title -->
+    <div class="text-center mb-16 fade-in">
+     <h2 class="text-4xl font-bold text-blue-900 mb-4" data-id="experience-title">Pengalaman Profesional</h2>
+     <div class="w-24 h-1 bg-yellow-500 mx-auto"></div>
+    </div>
+    <div class="space-y-8">
+     <!-- Experience Card: LHSStudio (Current) -->
+     <div class="card-hover bg-white rounded-2xl p-8 shadow-lg border border-slate-100 fade-in">
+      <div class="flex items-start gap-4 mb-4">
+       <!-- NOTE: Logo container. -->
+       <div class="w-16 h-16 rounded-xl flex items-center justify-center flex-shrink-0 self-center" style="background-color: rgba(59, 130, 246, 0.15);">
+        <svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 303.89 321.16" class="h-8 w-auto text-white" fill="#202864"><g id="Layer_1-2" data-name="Layer 1"><g><path d="M297.06,48.19v272.97s-109.69-.36-109.69-.36v-23.38h84.69c1.76,0,1.18-6.5,1.24-7.75,1.56-30.5.24-62.44.36-93.15.12-31.45.51-63.11.75-94.55.08-10.01-.09-20.04-.01-30.04H56.28l-.54-.54V0h215.96l.54.54v23.38l-.54.54H80.02l-.54.54v22.66l.54.54h217.04Z"></path><polygon points="252.82 85.59 252.82 285.91 229.09 285.91 229.09 197.26 228.55 196.72 159.86 196.72 159.32 197.26 159.32 285.19 134.86 285.19 134.86 86.85 135.4 86.31 158.78 86.31 159.32 86.85 159.32 174.25 159.86 174.79 229.09 174.79 229.09 85.59 252.82 85.59"></polygon><polygon points="22.66 2.88 22.66 172.81 23.2 173.35 119.04 173.35 119.04 196 0 196 0 2.88 22.66 2.88"></polygon><polygon points="303.89 .36 303.89 24.1 280.69 24.1 280.16 23.56 280.16 .36 303.89 .36"></polygon><polygon points="158.96 320.08 135.22 320.08 135.22 296.88 135.76 296.34 158.42 296.34 158.96 296.88 158.96 320.08"></polygon></g></g></svg>
+       </div>
+       <div class="flex-1">
+        <h3 class="text-2xl font-bold text-blue-900" data-id="exp-owner-title">Pemilik / Freelancer</h3>
+        <p class="text-yellow-600 font-semibold">LHSStudio</p>
+       </div>
+      </div>
+      <p class="text-slate-700 leading-relaxed mb-4" data-id="exp-owner-desc">Menyalurkan keahlian di bidang teknologi dan desain untuk solusi digital. Berfokus pada proyek yang memanfaatkan semua keahlian saya.</p>
+      <div class="text-slate-600 font-medium mb-6"><span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm" data-id="period-current">Saat Ini</span> <span class="ml-2" data-id="period-aug-2021-current">Agu 2021 - Saat Ini</span>
+      </div>
+      <!-- Tools & Skills Icons -->
+      <div class="flex flex-col sm:flex-row sm:justify-between gap-4">
+       <!-- Tools (Left) -->
+       <div class="flex-1">
+        <h4 class="text-sm font-bold text-slate-600 mb-2" data-id="tools-label">Alat</h4>
+        <div class="tech-icon-container flex flex-wrap gap-2">
+         <div class="tech-icon bg-blue-600 border-blue-600" data-tooltip="Adobe Apps" style="background-color: #202864; border-color: #202864;">
+          <svg class="w-5 h-5 text-white" fill="currentColor" viewbox="0 0 24 24"><path d="M14.58,3H22V19.67L14.58,3M9.42,3H2V19.67L9.42,3M12,9.17l4.67,10.5H13.5l-1.33-3.34H8.75Z"></path></svg>
+         </div>
+         <div class="tech-icon bg-blue-600 border-blue-600" data-tooltip="Android Studio" style="background-color: #202864; border-color: #202864;">
+          <svg fill="currentColor" class="w-5 h-5 text-white" viewbox="0 0 32 32"><style type="text/css">.st0{fill-rule:evenodd;clip-rule:evenodd;}</style><path class="st0" d="M13.8,4h4.5v2.2h1.2c0.6,0,1,0.4,1,1v4.6l-0.6,0.8l6.2,10.8l0.9,3.9c0.1,0.5-0.5,0.9-0.9,0.5l-2.9-2.7l-2-3.5  C19.6,22.5,17.9,23,16,23s-3.6-0.5-5.1-1.4l-2,3.5L6,27.8c-0.4,0.4-1.1,0-0.9-0.5l0.9-3.9l2.3-4.1c-1.5-1.7-2.3-4-2.3-6.4  c0-0.4,0-0.8,0.1-1.1h3c-0.1,0.4-0.1,0.7-0.1,1.1c0,1.3,0.4,2.5,1,3.6l2.3-3.9l-0.6-0.8V7.2c0-0.6,0.4-1,1-1h1.2V4z M14.4,15.4  L12.4,19c1.1,0.6,2.3,1,3.6,1s2.6-0.4,3.6-1l-2.1-3.6l-0.8,1c-0.4,0.5-1.2,0.5-1.6,0L14.4,15.4z M14.1,11.8L14.1,11.8  c0.4,0.7,1.1,1.1,1.9,1.1c0.8,0,1.6-0.4,1.9-1.1c0.2-0.3,0.3-0.7,0.3-1.1c0-1.2-1-2.2-2.2-2.2s-2.2,1-2.2,2.2  C13.8,11.1,13.9,11.5,14.1,11.8z"></path></svg>
+         </div>
+         <div class="tech-icon bg-blue-600 border-blue-600" data-tooltip="VS Code" style="background-color: #202864; border-color: #202864;">
+          <svg fill="currentColor" class="w-5 h-5 text-white" viewbox="0 0 32 32"><path d="M28,25.6l-5.9,2.4l-9.7-9.6l-6.1,4.8L4,21.9V10.1l2.3-1.2l6.1,4.8L22.1,4L28,6.4V25.6z M15.7,16l6.3,5l0,0V11L15.7,16  L15.7,16z M6.3,19.7L6.3,19.7L10,16l-3.6-3.7l0,0L6.3,19.7L6.3,19.7z"></path></svg>
+         </div>
+         <div class="tech-icon bg-blue-600 border-blue-600" data-tooltip="Firebase" style="background-color: #202864; border-color: #202864;">
+          <svg fill="currentColor" class="w-5 h-5 text-white" viewbox="0 0 15 15"><path d="M3.32981 0.0298784C3.51223 -0.0361671 3.71639 0.00927578 3.85358 0.146461L5.93224 2.22513C5.92035 2.24325 5.9095 2.26236 5.89981 2.28241L2.17523 9.98843L3.32981 0.0298784Z"></path><path d="M2.26182 11.9402L7.24276 14.9288C7.37675 15.0092 7.54062 15.0223 7.6857 14.9642L12.6857 12.9642C12.8944 12.8808 13.0218 12.6682 12.9969 12.4448L11.9969 3.44479C11.9763 3.25903 11.8538 3.10028 11.6793 3.03326C11.5048 2.96624 11.3075 3.00213 11.1678 3.1263L9.51277 4.59747L2.26182 11.9402Z"></path><path d="M8.9383 3.75601L7.91606 2.22265C7.81934 2.07757 7.65403 1.99336 7.47981 2.00041C7.30559 2.00746 7.14763 2.10476 7.06295 2.25718L6.75317 2.8148L3.76728 8.99249L8.9383 3.75601Z"></path></svg>
+         </div>
+        </div>
+       </div>
+       <!-- Skills (Right) -->
+       <div class="flex-1">
+        <h4 class="text-sm font-bold text-slate-600 mb-2 text-right" data-id="skills-label">Keahlian</h4>
+        <div class="flex justify-end">
+         <div class="bg-yellow-500 text-blue-900 px-3 py-1 rounded-lg text-sm font-medium" data-id="all-skills">
+          Semua Keahlian
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+     <!-- Recent Experiences Grid -->
+     <div class="grid md:grid-cols-2 gap-6">
+      <!-- Experience Card: UNICEF -->
+      <div class="card-hover bg-white rounded-2xl p-6 shadow-lg border border-slate-100 fade-in fade-in-delay-1">
+       <div class="flex items-start gap-3 mb-4">
+        <div class="w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0 self-center p-1" style="background-color: rgba(59, 130, 246, 0.15);">
+         <img src="images/partner/Unicef.webp" alt="Logo UNICEF" class="w-full h-full object-contain">
+        </div>
+        <div class="flex-1">
+         <h3 class="text-xl font-bold text-blue-900 mb-1" data-id="exp-editor-title">Editor &amp; Desainer Publikasi</h3>
+         <p class="text-yellow-600 font-semibold">UNICEF Indonesia</p>
+        </div>
+       </div>
+       <p class="text-slate-700 text-sm leading-relaxed mb-4" data-id="exp-editor-desc">Proyek desain editorial untuk "Modul Pelatihan Imunisasi Antigen Baru" - kolaborasi multi-institusi.</p><div class="text-slate-600 text-sm font-medium mb-4">
+        <span data-id="period-unicef">Mei 2025 - Jun 2025</span>
+       </div>
+       <!-- Tech Stack & Skills Icons -->
+       <div class="flex justify-between">
+        <div>
+         <h5 class="text-xs font-bold text-slate-500 mb-1" data-id="tools-label">Alat</h5>
+         <div class="tech-icon-container flex gap-1">
+          <div class="tech-icon-sm bg-blue-600 border-blue-600" data-tooltip="Adobe Photoshop" style="background-color: #202864; border-color: #202864;">
+            <svg class="w-4 h-4 text-white" fill="currentColor" viewbox="0 0 76 76"><path d="M 21.8953,23.1174C 23.8181,22.7673 26.4837,22.5055 30.1099,22.5055C 34.0428,22.5055 36.9266,23.3355 38.8059,24.9084C 40.5537,26.3507 41.6901,28.6663 41.6901,31.4192C 41.6901,34.2158 40.8164,36.5318 39.1559,38.1051C 37.0148,40.2461 33.6501,41.2512 29.8485,41.2512C 28.8434,41.2512 27.9256,41.2076 27.2262,41.0762L 27.2262,52.1755L 21.8953,52.1755L 21.8953,23.1174 Z M 27.2262,36.8382C 27.882,37.0132 28.7561,37.0564 29.8485,37.0564C 33.8683,37.0564 36.3152,35.0904 36.3152,31.6379C 36.3152,28.3609 34.0428,26.6126 30.3285,26.6126C 28.8434,26.6126 27.7947,26.744 27.2262,26.8753L 27.2262,36.8382 Z M 42.8675,37.1001C 42.8675,33.3421 45.9704,30.4142 50.9084,30.4142C 53.2676,30.4142 55.3219,31.0261 56.5447,31.6816L 55.4964,35.4831C 54.5786,34.9585 52.874,34.2599 50.9957,34.2599C 49.0733,34.2599 48.0242,35.1777 48.0242,36.4877C 48.0242,37.8433 49.0292,38.4983 51.7385,39.4597C 55.5837,40.858 57.3747,42.8245 57.4193,45.9701C 57.4193,49.8154 54.4041,52.6564 48.7665,52.6564C 46.1886,52.6564 43.8725,52.0005 42.3002,51.1268L 43.3484,47.2379C 44.5721,47.9811 46.8882,48.7667 48.811,48.7667C 51.1707,48.7667 52.2185,47.8057 52.2185,46.4079C 52.2185,44.9655 51.3451,44.2223 48.7237,43.3045C 44.5721,41.863 42.8243,39.5902 42.8675,37.1001 Z "></path></svg>
+          </div>
+          <div class="tech-icon-sm bg-blue-600 border-blue-600" data-tooltip="Adobe InDesign" style="background-color: #202864; border-color: #202864;">
+            <svg class="w-4 h-4 text-white" fill="currentColor" viewbox="0 0 76 76"><path d="M 24.2467,52.1597L 24.2467,22.708L 29.6216,22.708L 29.6216,52.1597L 24.2467,52.1597 Z M 48.1075,21.1342L 53.0289,21.1342L 53.0289,46.1733L 53.1886,52.1597L 48.7882,52.1597L 48.5889,48.7949L 48.5084,48.7949C 47.3476,51.1546 44.9888,52.6406 42.1477,52.6406C 37.5088,52.6406 33.8286,48.3144 33.8286,41.7594C 33.7881,34.6371 37.8678,30.3981 42.5486,30.3981C 45.229,30.3981 47.1487,31.6218 48.0288,33.1951L 48.1075,33.1951L 48.1075,21.1342 Z M 38.8274,41.5849C 38.8274,45.4738 40.5879,48.3144 43.7093,48.3144C 45.7091,48.3144 47.4677,46.8289 47.9482,44.5128C 48.0684,44.0319 48.1075,43.5077 48.1075,42.9395L 48.1075,39.7497L 47.9892,38.3514C 47.5483,36.254 45.9889,34.5498 43.7484,34.5498C 40.5879,34.5498 38.8274,37.6082 38.8274,41.5849 Z "></path></svg>
+          </div>
+          <div class="tech-icon-sm bg-blue-600 border-blue-600" data-tooltip="Microsoft Word" style="background-color: #202864; border-color: #202864;">
+            <svg class="w-4 h-4 text-white" fill="currentColor" viewbox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M10 1C9.73478 1 9.48043 1.10536 9.29289 1.29289L3.29289 7.29289C3.10536 7.48043 3 7.73478 3 8V20C3 21.6569 4.34315 23 6 23H10C10.5523 23 11 22.5523 11 22C11 21.4477 10.5523 21 10 21H6C5.44772 21 5 20.5523 5 20V9H10C10.5523 9 11 8.55228 11 8V3H18C18.5523 3 19 3.44772 19 4V9C19 9.55228 19.4477 10 20 10C20.5523 10 21 9.55228 21 9V4C21 2.34315 19.6569 1 18 1H10ZM9 7H6.41421L9 4.41421V7ZM12.952 12.694C12.783 12.1682 12.2198 11.879 11.694 12.048C11.1682 12.217 10.879 12.7802 11.048 13.306L13.298 20.306C13.4309 20.7196 13.8156 21 14.25 21C14.6844 21 15.0691 20.7196 15.202 20.306L16.5 16.2679L17.798 20.306C17.9309 20.7196 18.3156 21 18.75 21C19.1844 21 19.5691 20.7196 19.702 20.306L21.952 13.306C22.121 12.7802 21.8318 12.217 21.306 12.048C20.7802 11.879 20.217 12.1682 20.048 12.694L18.75 16.7321L17.452 12.694C17.3191 12.2804 16.9344 12 16.5 12C16.0656 12 15.6809 12.2804 15.548 12.694L14.25 16.7321L12.952 12.694Z"></path></svg>
+          </div>
+         </div>
+        </div>
+        <div>
+         <h5 class="text-xs font-bold text-slate-500 mb-1 text-right" data-id="skills-label">Keahlian</h5>
+         <div class="skill-icon-container flex gap-1 justify-end">
+          <div class="skill-icon-sm bg-yellow-500 border-yellow-500" data-tooltip="Desain Grafis">
+           <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" fill="currentColor" class="w-4 h-4 text-blue-900"><path fill-rule="evenodd" d="M1.5 6a2.25 2.25 0 0 1 2.25-2.25h16.5A2.25 2.25 0 0 1 22.5 6v12a2.25 2.25 0 0 1-2.25 2.25H3.75A2.25 2.25 0 0 1 1.5 18V6ZM3 16.06V18c0 .414.336.75.75.75h16.5A.75.75 0 0 0 21 18v-1.94l-2.69-2.689a1.5 1.5 0 0 0-2.12 0l-.88.879.97.97a.75.75 0 1 1-1.06 1.06l-5.16-5.159a1.5 1.5 0 0 0-2.12 0L3 16.061Zm10.125-7.81a1.125 1.125 0 1 1 2.25 0 1.125 1.125 0 0 1-2.25 0Z" clip-rule="evenodd"></path></svg>
+          </div>
+          <div class="skill-icon-sm bg-yellow-500 border-yellow-500" data-tooltip="Microsoft Office">
+           <svg class="w-4 h-4 text-blue-900" fill="currentColor" viewbox="0 0 20 20"><path fill-rule="evenodd" d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4zm2 6a1 1 0 011-1h6a1 1 0 110 2H7a1 1 0 01-1-1zm1 3a1 1 0 100 2h6a1 1 0 100-2H7z" clip-rule="evenodd" />
+           </svg>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div><!-- Experience Card: NHPEO Mandalika -->
+      <div class="card-hover bg-white rounded-2xl p-6 shadow-lg border border-slate-100 fade-in fade-in-delay-2">
+       <div class="flex items-start gap-3 mb-4">
+        <div class="w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0 self-center" style="background-color: rgba(59, 130, 246, 0.15);">
+         <img src="images/partner/Poltekkes Mataram.webp" alt="Logo Poltekkes Mataram" class="w-full h-full object-contain">
+        </div>
+        <div class="flex-1">
+         <h3 class="text-xl font-bold text-blue-900 mb-1" data-id="exp-lead-title">Desainer Utama &amp; Wakil Koordinator IT</h3>
+         <p class="text-yellow-600 font-semibold">NHPEO Mandalika 2025</p>
+        </div>
+       </div>
+       <p class="text-slate-700 text-sm leading-relaxed mb-4" data-id="exp-lead-desc">Merancang identitas visual acara nasional dan mengelola aspek teknis (live stream, OBS, videotron).</p><div class="text-slate-600 text-sm font-medium mb-4">
+        <span data-id="period-nhpeo">2025</span>
+       </div>
+       <!-- Tech Stack & Skills Icons -->
+       <div class="flex justify-between">
+        <div>
+         <h5 class="text-xs font-bold text-slate-500 mb-1" data-id="tools-label">Alat</h5>
+         <div class="tech-icon-container flex gap-1">
+          <div class="tech-icon-sm bg-blue-600 border-blue-600" data-tooltip="Adobe Photoshop" style="background-color: #202864; border-color: #202864;">
+            <svg class="w-4 h-4 text-white" fill="currentColor" viewbox="0 0 76 76"><path d="M 21.8953,23.1174C 23.8181,22.7673 26.4837,22.5055 30.1099,22.5055C 34.0428,22.5055 36.9266,23.3355 38.8059,24.9084C 40.5537,26.3507 41.6901,28.6663 41.6901,31.4192C 41.6901,34.2158 40.8164,36.5318 39.1559,38.1051C 37.0148,40.2461 33.6501,41.2512 29.8485,41.2512C 28.8434,41.2512 27.9256,41.2076 27.2262,41.0762L 27.2262,52.1755L 21.8953,52.1755L 21.8953,23.1174 Z M 27.2262,36.8382C 27.882,37.0132 28.7561,37.0564 29.8485,37.0564C 33.8683,37.0564 36.3152,35.0904 36.3152,31.6379C 36.3152,28.3609 34.0428,26.6126 30.3285,26.6126C 28.8434,26.6126 27.7947,26.744 27.2262,26.8753L 27.2262,36.8382 Z M 42.8675,37.1001C 42.8675,33.3421 45.9704,30.4142 50.9084,30.4142C 53.2676,30.4142 55.3219,31.0261 56.5447,31.6816L 55.4964,35.4831C 54.5786,34.9585 52.874,34.2599 50.9957,34.2599C 49.0733,34.2599 48.0242,35.1777 48.0242,36.4877C 48.0242,37.8433 49.0292,38.4983 51.7385,39.4597C 55.5837,40.858 57.3747,42.8245 57.4193,45.9701C 57.4193,49.8154 54.4041,52.6564 48.7665,52.6564C 46.1886,52.6564 43.8725,52.0005 42.3002,51.1268L 43.3484,47.2379C 44.5721,47.9811 46.8882,48.7667 48.811,48.7667C 51.1707,48.7667 52.2185,47.8057 52.2185,46.4079C 52.2185,44.9655 51.3451,44.2223 48.7237,43.3045C 44.5721,41.863 42.8243,39.5902 42.8675,37.1001 Z "></path></svg>
+          </div>
+          <div class="tech-icon-sm bg-blue-600 border-blue-600" data-tooltip="Adobe After Effects" style="background-color: #202864; border-color: #202864;">
+            <svg class="w-4 h-4 text-white" fill="currentColor" viewbox="0 0 76 76"><path d="M 23.9216,22.2925L 30.9309,22.2925L 40.7089,52.3818L 34.8148,52.3818L 32.0925,43.8554L 22.5386,43.8554L 19.949,52.3818L 14.2799,52.3818L 23.9216,22.2925 Z M 25.7526,32.2927L 23.4316,39.7038L 31.1545,39.7038L 28.7885,32.2927C 28.2077,30.4626 27.7169,28.4088 27.2706,26.6681L 27.1815,26.6681C 26.7348,28.4088 26.288,30.5071 25.7526,32.2927 Z M 42.7186,41.8462C 42.7186,35.8199 46.3794,30.1499 53.3437,30.1499C 60.4412,30.1499 62.7186,35.954 62.7186,40.7305C 62.7186,41.7567 62.6295,42.5606 62.5399,43.0515L 47.9868,43.0515C 48.1204,46.9808 51.2004,48.676 54.6826,48.676C 57.2272,48.676 59.0578,48.3202 60.7098,47.6948L 61.5133,51.4897C 59.6381,52.2477 57.0495,52.8735 53.9232,52.8735C 46.8702,52.8735 42.7186,48.4979 42.7186,41.8462 Z M 53.031,33.9002C 49.6379,33.9002 48.209,36.9802 47.9868,39.2121L 57.5403,39.2121C 57.5848,37.2038 56.6913,33.9002 53.031,33.9002 Z "></path></svg>
+          </div>
+          <div class="tech-icon-sm bg-blue-600 border-blue-600" data-tooltip="OBS Studio" style="background-color: #202864; border-color: #202864;">
+            <svg fill="currentColor" class="w-4 h-4 text-white" viewbox="0 0 289.09 289.2"><path d="M248.34,42.92c68.73,70.09,47.48,189.77-40.87,231.84C91.53,329.97-33.92,217.51,8.4,95.91,43.21-4.1,174.07-32.82,248.34,42.92ZM102.95,14.98c-3.16.46-6.9,3.76-9.35,5.8-27.16,22.66-37.37,66.88-18.12,97.49,42.02.54,72.77,37.15,64.38,78.77-7.11,35.29-42.17,57.56-77.35,50.5,1.23,2.32,7.48,3.11,10.05,3.65,31.72,6.68,67.48-7.78,83.54-36.39-34.39-72.75,57.27-132.05,109.23-71.16l9.5,15.76c-6.06-34.69-38.8-60.34-73.64-61.46-57.6,84.57-170.86-11.33-98.24-82.96Z"></path></svg>
+          </div>
+         </div>
+        </div>
+        <div>
+         <h5 class="text-xs font-bold text-slate-500 mb-1 text-right" data-id="skills-label">Keahlian</h5>
+         <div class="skill-icon-container flex gap-1 justify-end">
+          <div class="skill-icon-sm bg-yellow-500 border-yellow-500" data-tooltip="Desain Grafis">
+           <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" fill="currentColor" class="w-4 h-4 text-blue-900"><path fill-rule="evenodd" d="M1.5 6a2.25 2.25 0 0 1 2.25-2.25h16.5A2.25 2.25 0 0 1 22.5 6v12a2.25 2.25 0 0 1-2.25 2.25H3.75A2.25 2.25 0 0 1 1.5 18V6ZM3 16.06V18c0 .414.336.75.75.75h16.5A.75.75 0 0 0 21 18v-1.94l-2.69-2.689a1.5 1.5 0 0 0-2.12 0l-.88.879.97.97a.75.75 0 1 1-1.06 1.06l-5.16-5.159a1.5 1.5 0 0 0-2.12 0L3 16.061Zm10.125-7.81a1.125 1.125 0 1 1 2.25 0 1.125 1.125 0 0 1-2.25 0Z" clip-rule="evenodd"></path></svg>
+          </div>
+          <div class="skill-icon-sm bg-yellow-500 border-yellow-500" data-tooltip="Motion Grafis">
+           <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" fill="currentColor" class="w-4 h-4 text-blue-900"><path d="M4.5 4.5a3 3 0 0 0-3 3v9a3 3 0 0 0 3 3h8.25a3 3 0 0 0 3-3v-9a3 3 0 0 0-3-3H4.5ZM19.94 18.75l-2.69-2.69V7.94l2.69-2.69c.944-.945 2.56-.276 2.56 1.06v11.38c0 1.336-1.616 2.005-2.56 1.06Z"></path></svg>
+          </div>
+          <div class="skill-icon-sm bg-yellow-500 border-yellow-500" data-tooltip="Manajemen Tim">
+           <svg class="w-4 h-4 text-blue-900" fill="currentColor" viewbox="0 0 20 20"><path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3z" />
+           </svg>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+     <!-- More Experiences Grid -->
+     <div class="grid md:grid-cols-2 gap-6">
+      <!-- Experience Card: Xpectro Club -->
+      <div class="card-hover bg-white rounded-2xl p-6 shadow-lg border border-slate-100 fade-in fade-in-delay-1">
+       <div class="flex items-start gap-3 mb-4">
+        <div class="w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0 self-center p-1" style="background-color: rgba(59, 130, 246, 0.15);">
+         <img src="images/partner/xpectro.webp" alt="Logo Xpectro Club" class="w-full h-full object-contain">
+        </div>
+        <div class="flex-1">
+         <h3 class="text-xl font-bold text-blue-900 mb-1" data-id="exp-designer-title">Desainer &amp; Bantuan IT</h3>
+         <p class="text-yellow-600 font-semibold">Xpectro Club</p>
+        </div>
+       </div>
+       <p class="text-slate-700 text-sm leading-relaxed mb-4" data-id="exp-designer-desc">Peran ganda dalam desain visual dan dukungan teknis untuk platform bimbingan belajar online.</p><div class="text-slate-600 text-sm font-medium mb-4">
+        <span data-id="period-xpectro">Des 2023 - Apr 2025</span>
+       </div>
+       <!-- Tech Stack & Skills Icons -->
+       <div class="flex justify-between">
+        <div>
+         <h5 class="text-xs font-bold text-slate-500 mb-1" data-id="tools-label">Alat</h5>
+         <div class="tech-icon-container flex gap-1">
+          <div class="tech-icon-sm bg-blue-600 border-blue-600" data-tooltip="Adobe Photoshop" style="background-color: #202864; border-color: #202864;">
+            <svg class="w-4 h-4 text-white" fill="currentColor" viewbox="0 0 76 76"><path d="M 21.8953,23.1174C 23.8181,22.7673 26.4837,22.5055 30.1099,22.5055C 34.0428,22.5055 36.9266,23.3355 38.8059,24.9084C 40.5537,26.3507 41.6901,28.6663 41.6901,31.4192C 41.6901,34.2158 40.8164,36.5318 39.1559,38.1051C 37.0148,40.2461 33.6501,41.2512 29.8485,41.2512C 28.8434,41.2512 27.9256,41.2076 27.2262,41.0762L 27.2262,52.1755L 21.8953,52.1755L 21.8953,23.1174 Z M 27.2262,36.8382C 27.882,37.0132 28.7561,37.0564 29.8485,37.0564C 33.8683,37.0564 36.3152,35.0904 36.3152,31.6379C 36.3152,28.3609 34.0428,26.6126 30.3285,26.6126C 28.8434,26.6126 27.7947,26.744 27.2262,26.8753L 27.2262,36.8382 Z M 42.8675,37.1001C 42.8675,33.3421 45.9704,30.4142 50.9084,30.4142C 53.2676,30.4142 55.3219,31.0261 56.5447,31.6816L 55.4964,35.4831C 54.5786,34.9585 52.874,34.2599 50.9957,34.2599C 49.0733,34.2599 48.0242,35.1777 48.0242,36.4877C 48.0242,37.8433 49.0292,38.4983 51.7385,39.4597C 55.5837,40.858 57.3747,42.8245 57.4193,45.9701C 57.4193,49.8154 54.4041,52.6564 48.7665,52.6564C 46.1886,52.6564 43.8725,52.0005 42.3002,51.1268L 43.3484,47.2379C 44.5721,47.9811 46.8882,48.7667 48.811,48.7667C 51.1707,48.7667 52.2185,47.8057 52.2185,46.4079C 52.2185,44.9655 51.3451,44.2223 48.7237,43.3045C 44.5721,41.863 42.8243,39.5902 42.8675,37.1001 Z "></path></svg>
+          </div>
+          <div class="tech-icon-sm bg-blue-600 border-blue-600" data-tooltip="Adobe Illustrator" style="background-color: #202864; border-color: #202864;">
+            <svg class="w-4 h-4 text-white" fill="currentColor" viewbox="0 0 76 76"><path d="M 30.4822,22.8009L 37.3426,22.8009L 46.9122,52.2525L 41.1446,52.2525L 38.4785,43.9062L 29.1276,43.9062L 26.5929,52.2525L 21.0439,52.2525L 30.4822,22.8009 Z M 32.2736,32.5887L 30.0017,39.8432L 37.5616,39.8432L 35.2452,32.5887C 34.6774,30.7977 34.1965,28.7872 33.7601,27.083L 33.6723,27.083C 33.2351,28.7872 32.7982,30.8409 32.2736,32.5887 Z M 48.7023,25.0292C 48.7023,23.3687 49.9255,22.1014 51.717,22.1014C 53.5521,22.1014 54.6885,23.3687 54.7322,25.0292C 54.7322,26.6462 53.5521,27.9135 51.6733,27.9135C 49.8819,27.9135 48.7023,26.6462 48.7023,25.0292 Z M 49.0077,52.2525L 49.0077,30.9723L 54.4267,30.9723L 54.4267,52.2525L 49.0077,52.2525 Z "></path></svg>
+          </div>
+          <div class="tech-icon-sm bg-blue-600 border-blue-600" data-tooltip="VS Code" style="background-color: #202864; border-color: #202864;">
+            <svg class="w-4 h-4 text-white" fill="currentColor" viewbox="0 0 32 32"><path d="M28,25.6l-5.9,2.4l-9.7-9.6l-6.1,4.8L4,21.9V10.1l2.3-1.2l6.1,4.8L22.1,4L28,6.4V25.6z M15.7,16l6.3,5l0,0V11L15.7,16  L15.7,16z M6.3,19.7L6.3,19.7L10,16l-3.6-3.7l0,0L6.3,19.7L6.3,19.7z"></path></svg>
+          </div>
+          <div class="tech-icon-sm bg-blue-600 border-blue-600" data-tooltip="Microsoft Office" style="background-color: #202864; border-color: #202864;">
+            <svg class="w-4 h-4 text-white" fill="currentColor" viewbox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M10 1C9.73478 1 9.48043 1.10536 9.29289 1.29289L3.29289 7.29289C3.10536 7.48043 3 7.73478 3 8V20C3 21.6569 4.34315 23 6 23H10C10.5523 23 11 22.5523 11 22C11 21.4477 10.5523 21 10 21H6C5.44772 21 5 20.5523 5 20V9H10C10.5523 9 11 8.55228 11 8V3H18C18.5523 3 19 3.44772 19 4V9C19 9.55228 19.4477 10 20 10C20.5523 10 21 9.55228 21 9V4C21 2.34315 19.6569 1 18 1H10ZM9 7H6.41421L9 4.41421V7ZM12.952 12.694C12.783 12.1682 12.2198 11.879 11.694 12.048C11.1682 12.217 10.879 12.7802 11.048 13.306L13.298 20.306C13.4309 20.7196 13.8156 21 14.25 21C14.6844 21 15.0691 20.7196 15.202 20.306L16.5 16.2679L17.798 20.306C17.9309 20.7196 18.3156 21 18.75 21C19.1844 21 19.5691 20.7196 19.702 20.306L21.952 13.306C22.121 12.7802 21.8318 12.217 21.306 12.048C20.7802 11.879 20.217 12.1682 20.048 12.694L18.75 16.7321L17.452 12.694C17.3191 12.2804 16.9344 12 16.5 12C16.0656 12 15.6809 12.2804 15.548 12.694L14.25 16.7321L12.952 12.694Z"></path></svg>
+          </div>
+         </div>
+        </div>
+        <div>
+         <h5 class="text-xs font-bold text-slate-500 mb-1 text-right" data-id="skills-label">Keahlian</h5>
+         <div class="skill-icon-container flex gap-1 justify-end">
+          <div class="skill-icon-sm bg-yellow-500 border-yellow-500" data-tooltip="Desain Grafis">
+           <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" fill="currentColor" class="w-4 h-4 text-blue-900"><path fill-rule="evenodd" d="M1.5 6a2.25 2.25 0 0 1 2.25-2.25h16.5A2.25 2.25 0 0 1 22.5 6v12a2.25 2.25 0 0 1-2.25 2.25H3.75A2.25 2.25 0 0 1 1.5 18V6ZM3 16.06V18c0 .414.336.75.75.75h16.5A.75.75 0 0 0 21 18v-1.94l-2.69-2.689a1.5 1.5 0 0 0-2.12 0l-.88.879.97.97a.75.75 0 1 1-1.06 1.06l-5.16-5.159a1.5 1.5 0 0 0-2.12 0L3 16.061Zm10.125-7.81a1.125 1.125 0 1 1 2.25 0 1.125 1.125 0 0 1-2.25 0Z" clip-rule="evenodd"></path></svg>
+          </div>
+          <div class="skill-icon-sm bg-yellow-500 border-yellow-500" data-tooltip="Pengembangan Website">
+           <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" fill="currentColor" class="w-4 h-4 text-blue-900"><path fill-rule="evenodd" d="M2.25 6a3 3 0 0 1 3-3h13.5a3 3 0 0 1 3 3v12a3 3 0 0 1-3 3H5.25a3 3 0 0 1-3-3V6Zm3.97.97a.75.75 0 0 1 1.06 0l2.25 2.25a.75.75 0 0 1 0 1.06l-2.25 2.25a.75.75 0 0 1-1.06-1.06l1.72-1.72-1.72-1.72a.75.75 0 0 1 0-1.06Zm4.28 4.28a.75.75 0 0 0 0 1.5h3a.75.75 0 0 0 0-1.5h-3Z" clip-rule="evenodd"></path></svg>
+          </div>
+          <div class="skill-icon-sm bg-yellow-500 border-yellow-500" data-tooltip="Microsoft Office">
+           <svg class="w-4 h-4 text-blue-900" fill="currentColor" viewbox="0 0 20 20"><path fill-rule="evenodd" d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4zm2 6a1 1 0 011-1h6a1 1 0 110 2H7a1 1 0 01-1-1zm1 3a1 1 0 100 2h6a1 1 0 100-2H7z" clip-rule="evenodd" />
+           </svg>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div><!-- Experience Card: CV. Space Creative Media -->
+      <div class="card-hover bg-white rounded-2xl p-6 shadow-lg border border-slate-100 fade-in fade-in-delay-2">
+       <div class="flex items-start gap-3 mb-4">
+        <div class="w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0 self-center p-1" style="background-color: rgba(59, 130, 246, 0.15);">
+         <img src="images/partner/Spacemed.webp" alt="Logo SpaceMed" class="w-full h-full object-contain">
+        </div>
+        <div class="flex-1">
+         <h3 class="text-xl font-bold text-blue-900 mb-1" data-id="exp-production-title">Staf Produksi</h3>
+         <p class="text-yellow-600 font-semibold">CV. Space Creative Media</p>
+        </div>
+       </div>
+       <p class="text-slate-700 text-sm leading-relaxed mb-4" data-id="exp-production-desc">Mewujudkan desain visual sesuai keinginan klien dengan berbagai media kreatif.</p><div class="text-slate-600 text-sm font-medium mb-4">
+        <span data-id="period-spacemed">Jul 2022 - Sep 2024</span>
+       </div>
+       <!-- Tech Stack & Skills Icons -->
+       <div class="flex justify-between">
+        <div>
+         <h5 class="text-xs font-bold text-slate-500 mb-1" data-id="tools-label">Alat</h5>
+         <div class="tech-icon-container flex gap-1">
+          <div class="tech-icon-sm bg-blue-600 border-blue-600" data-tooltip="Adobe Photoshop" style="background-color: #202864; border-color: #202864;">
+            <svg class="w-4 h-4 text-white" fill="currentColor" viewbox="0 0 76 76"><path d="M 21.8953,23.1174C 23.8181,22.7673 26.4837,22.5055 30.1099,22.5055C 34.0428,22.5055 36.9266,23.3355 38.8059,24.9084C 40.5537,26.3507 41.6901,28.6663 41.6901,31.4192C 41.6901,34.2158 40.8164,36.5318 39.1559,38.1051C 37.0148,40.2461 33.6501,41.2512 29.8485,41.2512C 28.8434,41.2512 27.9256,41.2076 27.2262,41.0762L 27.2262,52.1755L 21.8953,52.1755L 21.8953,23.1174 Z M 27.2262,36.8382C 27.882,37.0132 28.7561,37.0564 29.8485,37.0564C 33.8683,37.0564 36.3152,35.0904 36.3152,31.6379C 36.3152,28.3609 34.0428,26.6126 30.3285,26.6126C 28.8434,26.6126 27.7947,26.744 27.2262,26.8753L 27.2262,36.8382 Z M 42.8675,37.1001C 42.8675,33.3421 45.9704,30.4142 50.9084,30.4142C 53.2676,30.4142 55.3219,31.0261 56.5447,31.6816L 55.4964,35.4831C 54.5786,34.9585 52.874,34.2599 50.9957,34.2599C 49.0733,34.2599 48.0242,35.1777 48.0242,36.4877C 48.0242,37.8433 49.0292,38.4983 51.7385,39.4597C 55.5837,40.858 57.3747,42.8245 57.4193,45.9701C 57.4193,49.8154 54.4041,52.6564 48.7665,52.6564C 46.1886,52.6564 43.8725,52.0005 42.3002,51.1268L 43.3484,47.2379C 44.5721,47.9811 46.8882,48.7667 48.811,48.7667C 51.1707,48.7667 52.2185,47.8057 52.2185,46.4079C 52.2185,44.9655 51.3451,44.2223 48.7237,43.3045C 44.5721,41.863 42.8243,39.5902 42.8675,37.1001 Z "></path></svg>
+          </div>
+          <div class="tech-icon-sm bg-blue-600 border-blue-600" data-tooltip="Adobe After Effects" style="background-color: #202864; border-color: #202864;">
+            <svg class="w-4 h-4 text-white" fill="currentColor" viewbox="0 0 76 76"><path d="M 23.9216,22.2925L 30.9309,22.2925L 40.7089,52.3818L 34.8148,52.3818L 32.0925,43.8554L 22.5386,43.8554L 19.949,52.3818L 14.2799,52.3818L 23.9216,22.2925 Z M 25.7526,32.2927L 23.4316,39.7038L 31.1545,39.7038L 28.7885,32.2927C 28.2077,30.4626 27.7169,28.4088 27.2706,26.6681L 27.1815,26.6681C 26.7348,28.4088 26.288,30.5071 25.7526,32.2927 Z M 42.7186,41.8462C 42.7186,35.8199 46.3794,30.1499 53.3437,30.1499C 60.4412,30.1499 62.7186,35.954 62.7186,40.7305C 62.7186,41.7567 62.6295,42.5606 62.5399,43.0515L 47.9868,43.0515C 48.1204,46.9808 51.2004,48.676 54.6826,48.676C 57.2272,48.676 59.0578,48.3202 60.7098,47.6948L 61.5133,51.4897C 59.6381,52.2477 57.0495,52.8735 53.9232,52.8735C 46.8702,52.8735 42.7186,48.4979 42.7186,41.8462 Z M 53.031,33.9002C 49.6379,33.9002 48.209,36.9802 47.9868,39.2121L 57.5403,39.2121C 57.5848,37.2038 56.6913,33.9002 53.031,33.9002 Z "></path></svg>
+          </div>
+          <div class="tech-icon-sm bg-blue-600 border-blue-600" data-tooltip="Adobe Illustrator" style="background-color: #202864; border-color: #202864;">
+            <svg class="w-4 h-4 text-white" fill="currentColor" viewbox="0 0 76 76"><path d="M 30.4822,22.8009L 37.3426,22.8009L 46.9122,52.2525L 41.1446,52.2525L 38.4785,43.9062L 29.1276,43.9062L 26.5929,52.2525L 21.0439,52.2525L 30.4822,22.8009 Z M 32.2736,32.5887L 30.0017,39.8432L 37.5616,39.8432L 35.2452,32.5887C 34.6774,30.7977 34.1965,28.7872 33.7601,27.083L 33.6723,27.083C 33.2351,28.7872 32.7982,30.8409 32.2736,32.5887 Z M 48.7023,25.0292C 48.7023,23.3687 49.9255,22.1014 51.717,22.1014C 53.5521,22.1014 54.6885,23.3687 54.7322,25.0292C 54.7322,26.6462 53.5521,27.9135 51.6733,27.9135C 49.8819,27.9135 48.7023,26.6462 48.7023,25.0292 Z M 49.0077,52.2525L 49.0077,30.9723L 54.4267,30.9723L 54.4267,52.2525L 49.0077,52.2525 Z "></path></svg>
+          </div>
+         </div>
+        </div>
+        <div>
+         <h5 class="text-xs font-bold text-slate-500 mb-1 text-right" data-id="skills-label">Keahlian</h5>
+         <div class="skill-icon-container flex gap-1 justify-end">
+          <div class="skill-icon-sm bg-yellow-500 border-yellow-500" data-tooltip="Desain Grafis">
+           <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" fill="currentColor" class="w-4 h-4 text-blue-900"><path fill-rule="evenodd" d="M1.5 6a2.25 2.25 0 0 1 2.25-2.25h16.5A2.25 2.25 0 0 1 22.5 6v12a2.25 2.25 0 0 1-2.25 2.25H3.75A2.25 2.25 0 0 1 1.5 18V6ZM3 16.06V18c0 .414.336.75.75.75h16.5A.75.75 0 0 0 21 18v-1.94l-2.69-2.689a1.5 1.5 0 0 0-2.12 0l-.88.879.97.97a.75.75 0 1 1-1.06 1.06l-5.16-5.159a1.5 1.5 0 0 0-2.12 0L3 16.061Zm10.125-7.81a1.125 1.125 0 1 1 2.25 0 1.125 1.125 0 0 1-2.25 0Z" clip-rule="evenodd"></path></svg>
+          </div>
+          <div class="skill-icon-sm bg-yellow-500 border-yellow-500" data-tooltip="Motion Grafis">
+           <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" fill="currentColor" class="w-4 h-4 text-blue-900"><path d="M4.5 4.5a3 3 0 0 0-3 3v9a3 3 0 0 0 3 3h8.25a3 3 0 0 0 3-3v-9a3 3 0 0 0-3-3H4.5ZM19.94 18.75l-2.69-2.69V7.94l2.69-2.69c.944-.945 2.56-.276 2.56 1.06v11.38c0 1.336-1.616 2.005-2.56 1.06Z"></path></svg>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </section>
+  <!-- Experience Section End -->
+  <!-- =================================================================== -->
+  <!-- =================================================================== -->
+  <!-- Skills & Projects Section Start -->
+  <section id="skills" class="py-20 bg-white">
+   <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <!-- Project Statistics Section Start -->
+    <div class="text-center mb-12 fade-in">
+     <p class="text-xl text-slate-600 mb-8" data-id="stats-subtitle">Sampai saat ini telah menghasilkan sebanyak:</p>
+     <!-- Statistics Cards -->
+     <div class="grid md:grid-cols-3 gap-8 mb-12">
+      <!-- Stat Card: Desain Grafis -->
+      <div class="relative overflow-hidden bg-gradient-to-br rounded-2xl p-8 text-white card-hover fade-in" style="background: linear-gradient(135deg, #202864 0%, #4f53eb 100%);">
+       <!-- Animated Background Pattern -->
+       <div class="stat-card-bg">
+        <div class="icon-pattern">
+         <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" fill="currentColor" class="pattern-icon"><path fill-rule="evenodd" d="M1.5 6a2.25 2.25 0 0 1 2.25-2.25h16.5A2.25 2.25 0 0 1 22.5 6v12a2.25 2.25 0 0 1-2.25 2.25H3.75A2.25 2.25 0 0 1 1.5 18V6ZM3 16.06V18c0 .414.336.75.75.75h16.5A.75.75 0 0 0 21 18v-1.94l-2.69-2.689a1.5 1.5 0 0 0-2.12 0l-.88.879.97.97a.75.75 0 1 1-1.06 1.06l-5.16-5.159a1.5 1.5 0 0 0-2.12 0L3 16.061Zm10.125-7.81a1.125 1.125 0 1 1 2.25 0 1.125 1.125 0 0 1-2.25 0Z" clip-rule="evenodd"></path></svg>
+         <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" fill="currentColor" class="pattern-icon"><path fill-rule="evenodd" d="M1.5 6a2.25 2.25 0 0 1 2.25-2.25h16.5A2.25 2.25 0 0 1 22.5 6v12a2.25 2.25 0 0 1-2.25 2.25H3.75A2.25 2.25 0 0 1 1.5 18V6ZM3 16.06V18c0 .414.336.75.75.75h16.5A.75.75 0 0 0 21 18v-1.94l-2.69-2.689a1.5 1.5 0 0 0-2.12 0l-.88.879.97.97a.75.75 0 1 1-1.06 1.06l-5.16-5.159a1.5 1.5 0 0 0-2.12 0L3 16.061Zm10.125-7.81a1.125 1.125 0 1 1 2.25 0 1.125 1.125 0 0 1-2.25 0Z" clip-rule="evenodd"></path></svg>
+         <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" fill="currentColor" class="pattern-icon"><path fill-rule="evenodd" d="M1.5 6a2.25 2.25 0 0 1 2.25-2.25h16.5A2.25 2.25 0 0 1 22.5 6v12a2.25 2.25 0 0 1-2.25 2.25H3.75A2.25 2.25 0 0 1 1.5 18V6ZM3 16.06V18c0 .414.336.75.75.75h16.5A.75.75 0 0 0 21 18v-1.94l-2.69-2.689a1.5 1.5 0 0 0-2.12 0l-.88.879.97.97a.75.75 0 1 1-1.06 1.06l-5.16-5.159a1.5 1.5 0 0 0-2.12 0L3 16.061Zm10.125-7.81a1.125 1.125 0 1 1 2.25 0 1.125 1.125 0 0 1-2.25 0Z" clip-rule="evenodd"></path></svg>
+         <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" fill="currentColor" class="pattern-icon"><path fill-rule="evenodd" d="M1.5 6a2.25 2.25 0 0 1 2.25-2.25h16.5A2.25 2.25 0 0 1 22.5 6v12a2.25 2.25 0 0 1-2.25 2.25H3.75A2.25 2.25 0 0 1 1.5 18V6ZM3 16.06V18c0 .414.336.75.75.75h16.5A.75.75 0 0 0 21 18v-1.94l-2.69-2.689a1.5 1.5 0 0 0-2.12 0l-.88.879.97.97a.75.75 0 1 1-1.06 1.06l-5.16-5.159a1.5 1.5 0 0 0-2.12 0L3 16.061Zm10.125-7.81a1.125 1.125 0 1 1 2.25 0 1.125 1.125 0 0 1-2.25 0Z" clip-rule="evenodd"></path></svg>
+        </div>
+       </div>
+       <div class="relative z-10 text-center">
+        <div class="text-6xl font-bold mb-4 counter-animation" data-target="12000" data-suffix="+">
+         0
+        </div>
+        <h3 class="text-xl font-semibold mb-3" data-id="total-design">Desain Grafis</h3>
+        <p class="text-blue-100 text-sm leading-relaxed" data-id="design-desc">Logo, Poster, Banner, Leaflet dan materi visual lainnya</p>
+       </div>
+      </div>
+      <!-- Stat Card: Motion Grafis -->
+      <div class="relative overflow-hidden bg-gradient-to-br rounded-2xl p-8 text-white card-hover fade-in fade-in-delay-1" style="background: linear-gradient(135deg, #202864 0%, #4f53eb 100%);">
+       <!-- Animated Background Pattern -->
+       <div class="stat-card-bg">
+        <div class="icon-pattern">
+         <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" fill="currentColor" class="pattern-icon"><path d="M4.5 4.5a3 3 0 0 0-3 3v9a3 3 0 0 0 3 3h8.25a3 3 0 0 0 3-3v-9a3 3 0 0 0-3-3H4.5ZM19.94 18.75l-2.69-2.69V7.94l2.69-2.69c.944-.945 2.56-.276 2.56 1.06v11.38c0 1.336-1.616 2.005-2.56 1.06Z"></path></svg>
+         <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" fill="currentColor" class="pattern-icon"><path d="M4.5 4.5a3 3 0 0 0-3 3v9a3 3 0 0 0 3 3h8.25a3 3 0 0 0 3-3v-9a3 3 0 0 0-3-3H4.5ZM19.94 18.75l-2.69-2.69V7.94l2.69-2.69c.944-.945 2.56-.276 2.56 1.06v11.38c0 1.336-1.616 2.005-2.56 1.06Z"></path></svg>
+         <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" fill="currentColor" class="pattern-icon"><path d="M4.5 4.5a3 3 0 0 0-3 3v9a3 3 0 0 0 3 3h8.25a3 3 0 0 0 3-3v-9a3 3 0 0 0-3-3H4.5ZM19.94 18.75l-2.69-2.69V7.94l2.69-2.69c.944-.945 2.56-.276 2.56 1.06v11.38c0 1.336-1.616 2.005-2.56 1.06Z"></path></svg>
+         <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" fill="currentColor" class="pattern-icon"><path d="M4.5 4.5a3 3 0 0 0-3 3v9a3 3 0 0 0 3 3h8.25a3 3 0 0 0 3-3v-9a3 3 0 0 0-3-3H4.5ZM19.94 18.75l-2.69-2.69V7.94l2.69-2.69c.944-.945 2.56-.276 2.56 1.06v11.38c0 1.336-1.616 2.005-2.56 1.06Z"></path></svg>
+        </div>
+       </div>
+       <div class="relative z-10 text-center">
+        <div class="text-6xl font-bold mb-4 counter-animation" data-target="700" data-suffix="+">
+         0
+        </div>
+        <h3 class="text-xl font-semibold mb-3" data-id="total-motion">Motion Grafis &amp; Video</h3>
+        <p class="text-blue-100 text-sm leading-relaxed" data-id="motion-desc">Animasi, Video Promosi, Motion Graphics dan konten multimedia</p>
+       </div>
+      </div>
+      <!-- Stat Card: Aplikasi & Website -->
+      <div class="relative overflow-hidden bg-gradient-to-br rounded-2xl p-8 text-white card-hover fade-in fade-in-delay-2" style="background: linear-gradient(135deg, #202864 0%, #4f53eb 100%);">
+       <!-- Animated Background Pattern -->
+       <div class="stat-card-bg">
+        <div class="icon-pattern">
+         <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" fill="currentColor" class="pattern-icon"><path fill-rule="evenodd" d="M2.25 6a3 3 0 0 1 3-3h13.5a3 3 0 0 1 3 3v12a3 3 0 0 1-3 3H5.25a3 3 0 0 1-3-3V6Zm3.97.97a.75.75 0 0 1 1.06 0l2.25 2.25a.75.75 0 0 1 0 1.06l-2.25 2.25a.75.75 0 0 1-1.06-1.06l1.72-1.72-1.72-1.72a.75.75 0 0 1 0-1.06Zm4.28 4.28a.75.75 0 0 0 0 1.5h3a.75.75 0 0 0 0-1.5h-3Z" clip-rule="evenodd"></path></svg>
+         <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" fill="currentColor" class="pattern-icon"><path fill-rule="evenodd" d="M2.25 6a3 3 0 0 1 3-3h13.5a3 3 0 0 1 3 3v12a3 3 0 0 1-3 3H5.25a3 3 0 0 1-3-3V6Zm3.97.97a.75.75 0 0 1 1.06 0l2.25 2.25a.75.75 0 0 1 0 1.06l-2.25 2.25a.75.75 0 0 1-1.06-1.06l1.72-1.72-1.72-1.72a.75.75 0 0 1 0-1.06Zm4.28 4.28a.75.75 0 0 0 0 1.5h3a.75.75 0 0 0 0-1.5h-3Z" clip-rule="evenodd"></path></svg>
+         <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" fill="currentColor" class="pattern-icon"><path fill-rule="evenodd" d="M2.25 6a3 3 0 0 1 3-3h13.5a3 3 0 0 1 3 3v12a3 3 0 0 1-3 3H5.25a3 3 0 0 1-3-3V6Zm3.97.97a.75.75 0 0 1 1.06 0l2.25 2.25a.75.75 0 0 1 0 1.06l-2.25 2.25a.75.75 0 0 1-1.06-1.06l1.72-1.72-1.72-1.72a.75.75 0 0 1 0-1.06Zm4.28 4.28a.75.75 0 0 0 0 1.5h3a.75.75 0 0 0 0-1.5h-3Z" clip-rule="evenodd"></path></svg>
+         <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" fill="currentColor" class="pattern-icon"><path fill-rule="evenodd" d="M2.25 6a3 3 0 0 1 3-3h13.5a3 3 0 0 1 3 3v12a3 3 0 0 1-3 3H5.25a3 3 0 0 1-3-3V6Zm3.97.97a.75.75 0 0 1 1.06 0l2.25 2.25a.75.75 0 0 1 0 1.06l-2.25 2.25a.75.75 0 0 1-1.06-1.06l1.72-1.72-1.72-1.72a.75.75 0 0 1 0-1.06Zm4.28 4.28a.75.75 0 0 0 0 1.5h3a.75.75 0 0 0 0-1.5h-3Z" clip-rule="evenodd"></path></svg>
+        </div>
+       </div>
+       <div class="relative z-10 text-center">
+        <div class="text-6xl font-bold mb-4 counter-animation" data-target="9" data-suffix="">
+         0
+        </div>
+        <h3 class="text-xl font-semibold mb-3" data-id="total-software">Aplikasi &amp; Website</h3>
+        <p class="text-blue-100 text-sm leading-relaxed" data-id="software-desc">Aplikasi Mobile, Website, Dashboard dan sistem digital</p>
+       </div>
+      </div>
+     </div>
+     <!-- NOTE: This section is for client logos. Add them here. -->
+     <p class="text-xl text-slate-600 mb-8" data-id="collaboration-subtitle">Telah Dipercaya Oleh:</p>
+     <div class="flex flex-wrap justify-center items-center gap-8 md:gap-12 mb-16 fade-in fade-in-delay-3">
+       <!-- Client Logos -->
+       <div class="client-logo" data-tooltip="Kemenkes RI">
+       <img src="images/partner/Kemenkes RI.webp" alt="Logo Kemenkes RI" class="h-16 w-28 object-contain">
+       </div>
+       <div class="client-logo" data-tooltip="UNICEF Indonesia">
+       <img src="images/partner/Unicef.webp" alt="Logo UNICEF Indonesia" class="h-16 w-28 object-contain">
+       </div>
+       <div class="client-logo" data-tooltip="Poltekkes Mataram">
+       <img src="images/partner/Poltekkes Mataram.webp" alt="Logo Poltekkes Mataram" class="h-16 w-28 object-contain">
+       </div>
+       <div class="client-logo" data-tooltip="SpaceMed">
+       <img src="images/partner/Spacemed.webp" alt="Logo SpaceMed" class="h-16 w-28 object-contain">
+       </div>
+       <div class="client-logo" data-tooltip="Xpectro Club">
+       <img src="images/partner/xpectro.webp" alt="Logo Xpectro Club" class="h-16 w-28 object-contain">
+       </div>
+       <div class="client-logo" data-tooltip="Sukma Rasa">
+       <img src="images/partner/SukmaRasa.webp" alt="Logo Sukma Rasa" class="h-16 w-28 object-contain">
+       </div>
+       <div class="client-logo" data-tooltip="ABADI">
+       <img src="images/partner/Abadi.webp" alt="Logo ABADI" class="h-16 w-28 object-contain">
+      </div>
+     </div>
+    </div>
+    <!-- Project Statistics Section End -->
+    <!-- Featured Projects Section Start -->
+    <div class="text-center mb-16 fade-in">
+     <h2 class="text-4xl font-bold text-blue-900 mb-4" data-id="projects-title">Project Unggulan</h2>
+     <div class="w-24 h-1 bg-yellow-500 mx-auto"></div>
+    </div>
+    <div class="space-y-16">
+     <!-- Category: Desain Grafis -->
+     <div class="fade-in">
+      <!-- Category Title -->
+      <div class="text-center mb-8">
+       <div class="w-16 h-16 bg-yellow-500 rounded-full flex items-center justify-center mx-auto mb-4">
+         <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" fill="currentColor" class="w-8 h-8 text-blue-900"><path fill-rule="evenodd" d="M1.5 6a2.25 2.25 0 0 1 2.25-2.25h16.5A2.25 2.25 0 0 1 22.5 6v12a2.25 2.25 0 0 1-2.25 2.25H3.75A2.25 2.25 0 0 1 1.5 18V6ZM3 16.06V18c0 .414.336.75.75.75h16.5A.75.75 0 0 0 21 18v-1.94l-2.69-2.689a1.5 1.5 0 0 0-2.12 0l-.88.879.97.97a.75.75 0 1 1-1.06 1.06l-5.16-5.159a1.5 1.5 0 0 0-2.12 0L3 16.061Zm10.125-7.81a1.125 1.125 0 1 1 2.25 0 1.125 1.125 0 0 1-2.25 0Z" clip-rule="evenodd"></path></svg>
+       </div>
+       <h3 class="text-2xl font-bold text-blue-900 mb-2" data-id="design-graphics-title">Desain Grafis</h3>
+       <p class="text-slate-600" data-id="design-graphics-subtitle">Menciptakan identitas visual yang kuat dan komunikatif</p>
+      </div>
+      <!-- Visible Project Cards -->
+      <div class="grid md:grid-cols-3 gap-6 mb-6" id="design-projects-main">
+       <!-- Project Card 1: UNICEF Module -->
+       <div class="project-card bg-white rounded-xl shadow-lg border border-slate-100 overflow-hidden">
+         <!-- NOTE: Thumbnail Container. -->
+         <img src="images/projects/UNICEF.webp" alt="Thumbnail Proyek UNICEF" class="w-full h-48 object-cover" loading="lazy">
+         <div class="p-6 text-center">
+         <h4 class="text-lg font-bold text-blue-900 mb-2" data-id="design-project-1-title">Desain Publikasi Modul Pelatihan (UNICEF)</h4>
+         <p class="text-slate-600 text-sm mb-4" data-id="design-project-1-desc">Mendesain modul pelatihan komprehensif untuk UNICEF dan Kemenkes. Sebuah proyek kolaborasi multi-institusi yang menuntut presisi desain, tata letak profesional, dan hasil cetak berkualitas tinggi.</p>
+          <!-- NOTE: GOOGLE DRIVE LINK PLACEHOLDER - Replace # with actual link -->
+          <a href="https://drive.google.com/file/d/15AoEcKNxm0N0N1bxWBGrpQwN0ZlsJcih/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300 transform hover:scale-105 inline-flex items-center gap-2 mx-auto" style="background-color: #202864;" data-id="learn-more-btn"> <span>Lebih Lanjut</span>
+          <svg class="w-4 h-4" fill="currentColor" viewbox="0 0 20 20"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+          </svg></a>
+        </div>
+       </div>
+       <!-- Project Card 2: NHPEO Branding -->
+       <div class="project-card bg-white rounded-xl shadow-lg border border-slate-100 overflow-hidden">
+        <!-- NOTE: Thumbnail Container. Replace placeholder SVG with an <img> tag. -->
+        <img src="images/projects/NHPEO.webp" alt="Thumbnail Proyek NHPEO" class="w-full h-48 object-cover" loading="lazy">
+        <div class="p-6 text-center">
+         <h4 class="text-lg font-bold text-blue-900 mb-2" data-id="design-project-2-title">Identitas Visual &amp; Branding NHPEO Mandalika 2025</h4>
+         <p class="text-slate-600 text-sm mb-4" data-id="design-project-2-desc">Merancang seluruh identitas visual untuk acara berskala nasional. Dari logo, merchandise (ID card, lanyard, pena), hingga materi promosi raksasa (billboard &amp; stage design) untuk pengalaman yang kohesif.</p>
+         <!-- NOTE: GOOGLE DRIVE LINK PLACEHOLDER - Replace # with actual link -->
+         <a href="https://www.youtube.com/watch?v=xQPAoqJgHdo" target="_blank" rel="noopener noreferrer" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300 transform hover:scale-105 inline-flex items-center gap-2 mx-auto" style="background-color: #202864;" data-id="learn-more-btn"> <span>Lebih Lanjut</span>
+          <svg class="w-4 h-4" fill="currentColor" viewbox="0 0 20 20"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+          </svg></a>
+        </div>
+       </div>
+       <!-- Project Card 3: Sukma Rasa -->
+       <div class="project-card bg-white rounded-xl shadow-lg border border-slate-100 overflow-hidden">
+        <!-- NOTE: Thumbnail Container. Replace placeholder SVG with an <img> tag. -->
+        <img src="images/projects/SukmaRasa.webp" alt="Thumbnail Proyek Sukma Rasa" class="w-full h-48 object-cover" loading="lazy">
+        <div class="p-6 text-center">
+         <h4 class="text-lg font-bold text-blue-900 mb-2" data-id="design-project-3-title">Visual Branding &amp; Promosi Digital (Sukma Rasa)</h4>
+         <p class="text-slate-600 text-sm mb-4" data-id="design-project-3-desc">Menerjemahkan esensi kuliner (gurih, pedas, segar) menjadi desain poster digital yang "menggugah selera". Fokus pada komposisi dan tipografi dinamis untuk menarik minat beli di platform digital.</p>
+         <!-- NOTE: GOOGLE DRIVE LINK PLACEHOLDER - Replace # with actual link -->
+         <a href="https://www.linkedin.com/in/lalu-habib-sasiwimbe-37b02632a/details/projects/?profileUrn=urn%3Ali%3Afsd_profile%3AACoAAFLw7I8BmAuXRzaX39MCGydxUNIrPc1e6gg" target="_blank" rel="noopener noreferrer" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300 transform hover:scale-105 inline-flex items-center gap-2 mx-auto" style="background-color: #202864;" data-id="learn-more-btn"> <span>Lebih Lanjut</span>
+          <svg class="w-4 h-4" fill="currentColor" viewbox="0 0 20 20"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+          </svg></a>
+        </div>
+       </div>
+      </div>
+      <!-- Hidden Design Projects Container -->
+      <div id="design-projects-hidden" class="grid md:grid-cols-3 gap-6 mb-6 max-h-0 overflow-hidden transition-all duration-500 ease-in-out opacity-0">
+       <!-- Project Card 4 -->
+       <div class="project-card bg-white rounded-xl shadow-lg border border-slate-100 overflow-hidden">
+         <img src="images/projects/MenuSukmarasa.webp" alt="Thumbnail Proyek Menu Sukma Rasa" class="w-full h-48 object-cover" loading="lazy">
+         <div class="p-6 text-center">
+         <h4 class="text-lg font-bold text-blue-900 mb-2" data-id="design-project-4-title">Desain Menu Book &amp; Materi Promosi (Sukma Rasa)</h4>
+         <p class="text-slate-600 text-sm mb-4" data-id="design-project-4-desc">Proyek desain end-to-end untuk restoran. Tidak hanya materi promo, tapi juga mendesain buku menu yang informatif, jelas, dan selaras dengan identitas visual brand.</p>
+          <a href="https://www.linkedin.com/in/lalu-habib-sasiwimbe-37b02632a/details/projects/?profileUrn=urn%3Ali%3Afsd_profile%3AACoAAFLw7I8BmAuXRzaX39MCGydxUNIrPc1e6gg" target="_blank" rel="noopener noreferrer" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300 transform hover:scale-105 inline-flex items-center gap-2 mx-auto" style="background-color: #202864;" data-id="learn-more-btn"> <span>Lebih Lanjut</span>
+          <svg class="w-4 h-4" fill="currentColor" viewbox="0 0 20 20"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+          </svg></a>
+         </div>
+       </div>
+       <!-- Project Card 5 -->
+       <div class="project-card bg-white rounded-xl shadow-lg border border-slate-100 overflow-hidden">
+         <img src="images/projects/SMM.webp" alt="Thumbnail Proyek Social Media Management" class="w-full h-48 object-cover" loading="lazy">
+         <div class="p-6 text-center">
+         <h4 class="text-lg font-bold text-blue-900 mb-2" data-id="design-project-5-title">Studi Kasus: Konten &amp; Branding Media Sosial</h4>
+         <p class="text-slate-600 text-sm mb-4" data-id="design-project-5-desc">Mengubah strategi brand menjadi feed Instagram yang estetik dan fungsional. Portofolio ini menunjukkan kemampuan merencanakan grid, adaptasi gaya visual, dan eksekusi desain yang engaging untuk berbagai industri.</p>
+          <a href="https://www.linkedin.com/in/lalu-habib-sasiwimbe-37b02632a/details/projects/?profileUrn=urn%3Ali%3Afsd_profile%3AACoAAFLw7I8BmAuXRzaX39MCGydxUNIrPc1e6gg" target="_blank" rel="noopener noreferrer" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300 transform hover:scale-105 inline-flex items-center gap-2 mx-auto" style="background-color: #202864;" data-id="learn-more-btn"> <span>Lebih Lanjut</span>
+          <svg class="w-4 h-4" fill="currentColor" viewbox="0 0 20 20"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+          </svg></a>
+         </div>
+       </div>
+       <!-- Project Card 6 -->
+       <div class="project-card bg-white rounded-xl shadow-lg border border-slate-100 overflow-hidden">
+         <img src="images/projects/Xpectro.webp" alt="Thumbnail Proyek Xpectro Club" class="w-full h-48 object-cover" loading="lazy">
+         <div class="p-6 text-center">
+         <h4 class="text-lg font-bold text-blue-900 mb-2" data-id="design-project-6-title">Visual Branding &amp; Promosi Digital (Xpectro Club)</h4>
+         <p class="text-slate-600 text-sm mb-4" data-id="design-project-6-desc">Bertanggung jawab atas mayoritas materi visual untuk platform online tutoring. Mendesain konten promosi engaging untuk media sosial serta layout modul pembelajaran yang user-friendly, bekerja sepenuhnya secara remote (WFA).</p>
+          <a href="https://www.instagram.com/xpectroclub/" target="_blank" rel="noopener noreferrer" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300 transform hover:scale-105 inline-flex items-center gap-2 mx-auto" style="background-color: #202864;" data-id="learn-more-btn"> <span>Lebih Lanjut</span>
+          <svg class="w-4 h-4" fill="currentColor" viewbox="0 0 20 20"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+          </svg></a>
+         </div>
+       </div>
+       <!-- Project Card 7 -->
+       <div class="project-card bg-white rounded-xl shadow-lg border border-slate-100 overflow-hidden">
+         <img src="images/projects/IKA Polkesram.webp" alt="Thumbnail Proyek IKA Polkesram" class="w-full h-48 object-cover" loading="lazy">
+         <div class="p-6 text-center">
+         <h4 class="text-lg font-bold text-blue-900 mb-2" data-id="design-project-7-title">Brand Identity Ikatan Alumni Poltekkes Mataram</h4>
+         <p class="text-slate-600 text-sm mb-4" data-id="design-project-7-desc">Memimpin proyek rebranding untuk organisasi alumni. Menciptakan identitas visual baru yang modern, profesional, dan sarat makna filosofis untuk merefleksikan nilai-nilai alumni.</p>
+          <a href="https://drive.google.com/file/d/1sFvQacr_iELJimjV5kaos16Wi6eskfqA/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300 transform hover:scale-105 inline-flex items-center gap-2 mx-auto" style="background-color: #202864;" data-id="learn-more-btn"> <span>Lebih Lanjut</span>
+          <svg class="w-4 h-4" fill="currentColor" viewbox="0 0 20 20"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+          </svg></a>
+         </div>
+       </div>
+       <!-- Project Card 8 -->
+       <div class="project-card bg-white rounded-xl shadow-lg border border-slate-100 overflow-hidden">
+         <img src="images/projects/AIPTLMI.webp" alt="Thumbnail Proyek AIPTLMI" class="w-full h-48 object-cover" loading="lazy">
+         <div class="p-6 text-center">
+         <h4 class="text-lg font-bold text-blue-900 mb-2" data-id="design-project-8-title">Logo &amp; Visual Identity (AIPTLMI)</h4>
+         <p class="text-slate-600 text-sm mb-4" data-id="design-project-8-desc">Mengeksekusi desain logo dan brand guideline untuk Asosiasi Institusi Pendidikan Tinggi TLM Indonesia. Tantangannya adalah menerjemahkan identitas organisasi nasional menjadi simbol yang filosofis dan modern.</p>
+          <a href="https://www.linkedin.com/in/lalu-habib-sasiwimbe-37b02632a/details/projects/?profileUrn=urn%3Ali%3Afsd_profile%3AACoAAFLw7I8BmAuXRzaX39MCGydxUNIrPc1e6gg" target="_blank" rel="noopener noreferrer" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300 transform hover:scale-105 inline-flex items-center gap-2 mx-auto" style="background-color: #202864;" data-id="learn-more-btn"> <span>Lebih Lanjut</span>
+          <svg class="w-4 h-4" fill="currentColor" viewbox="0 0 20 20"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+          </svg></a>
+         </div>
+       </div>
+       <!-- Project Card 9 -->
+       <div class="project-card bg-white rounded-xl shadow-lg border border-slate-100 overflow-hidden">
+         <img src="images/projects/bukusaku.webp" alt="Thumbnail Proyek Buku Saku ASI" class="w-full h-48 object-cover" loading="lazy">
+         <div class="p-6 text-center">
+         <h4 class="text-lg font-bold text-blue-900 mb-2" data-id="design-project-9-title">Desain &amp; Ilustrasi Buku Saku ASI Eksklusif</h4>
+         <p class="text-slate-600 text-sm mb-4" data-id="design-project-9-desc">Proyek kolaborasi dengan Poltekkes yang menuntut keahlian ganda: mendesain tata letak publikasi yang rapi sekaligus menciptakan ilustrasi orisinal dari nol untuk melengkapi materi edukasi.</p>
+          <a href="https://drive.google.com/file/d/12Ql8atT55RXP3ySlwef8pFYo7BxFxphe/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300 transform hover:scale-105 inline-flex items-center gap-2 mx-auto" style="background-color: #202864;" data-id="learn-more-btn"> <span>Lebih Lanjut</span>
+          <svg class="w-4 h-4" fill="currentColor" viewbox="0 0 20 20"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+          </svg></a>
+         </div>
+       </div>
+       <!-- Project Card 10 -->
+       <div class="project-card bg-white rounded-xl shadow-lg border border-slate-100 overflow-hidden">
+         <img src="images/projects/Flyer.webp" alt="Thumbnail Proyek Flyer Aplikasi" class="w-full h-48 object-cover" loading="lazy">
+         <div class="p-6 text-center">
+         <h4 class="text-lg font-bold text-blue-900 mb-2" data-id="design-project-10-title">Materi Promosi &amp; Panduan Aplikasi (KalDu PKV &amp; Lab Health)</h4>
+         <p class="text-slate-600 text-sm mb-4" data-id="design-project-10-desc">Mendesain flyer dan banner panduan pengguna untuk aplikasi digital. Fokus pada desain yang user-friendly, mengubah fitur teknis aplikasi menjadi panduan visual yang mudah diikuti oleh pengguna awam.</p>
+          <a href="https://drive.google.com/drive/folders/1TtERw3du4obKF5xjc6TEEap9r9coWaAH?usp=drive_link" target="_blank" rel="noopener noreferrer" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300 transform hover:scale-105 inline-flex items-center gap-2 mx-auto" style="background-color: #202864;" data-id="learn-more-btn"> <span>Lebih Lanjut</span>
+          <svg class="w-4 h-4" fill="currentColor" viewbox="0 0 20 20"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+          </svg></a>
+         </div>
+       </div>
+      </div>
+      <!-- Toggle Button for Design Projects -->
+      <div class="text-center"><button id="design-projects-toggle" onclick="toggleDesignProjects()" class="text-blue-600 font-bold hover:text-blue-700 transition-colors duration-300 cursor-pointer flex items-center gap-2 mx-auto" style="color: #202864;"> <span data-id="show-more-design-projects">Lebih banyak project Desain Grafis</span>
+        <svg class="w-4 h-4 transition-transform duration-300" id="design-projects-toggle-icon" fill="currentColor" viewbox="0 0 20 20"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+        </svg></button>
+      </div>
+     </div>
+     <!-- Category: Motion Grafis & Video -->
+     <div class="fade-in fade-in-delay-1">
+      <!-- Category Title -->
+      <div class="text-center mb-8">
+       <div class="w-16 h-16 bg-yellow-500 rounded-full flex items-center justify-center mx-auto mb-4">
+         <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" fill="currentColor" class="w-8 h-8 text-blue-900"><path d="M4.5 4.5a3 3 0 0 0-3 3v9a3 3 0 0 0 3 3h8.25a3 3 0 0 0 3-3v-9a3 3 0 0 0-3-3H4.5ZM19.94 18.75l-2.69-2.69V7.94l2.69-2.69c.944-.945 2.56-.276 2.56 1.06v11.38c0 1.336-1.616 2.005-2.56 1.06Z"></path></svg>
+       </div>
+       <h3 class="text-2xl font-bold text-blue-900 mb-2" data-id="motion-graphics-title">Motion Grafis &amp; Video</h3>
+       <p class="text-slate-600" data-id="motion-graphics-subtitle">Menghadirkan cerita melalui animasi dan video yang menarik</p>
+      </div>
+      <!-- Visible Project Cards -->
+      <div class="grid md:grid-cols-3 gap-6 mb-6">
+       <!-- Project Card 1: SADANIS -->
+       <div class="project-card bg-white rounded-xl shadow-lg border border-slate-100 overflow-hidden">
+        <!-- NOTE: Thumbnail Container. -->
+        <img src="images/projects/Sadanis.webp" alt="Thumbnail Proyek SADANIS" class="w-full h-48 object-cover" loading="lazy">
+        <div class="p-6 text-center">
+         <h4 class="text-lg font-bold text-blue-900 mb-2" data-id="motion-project-1-title">Video Animasi Edukasi "SADANIS"</h4>
+         <p class="text-slate-600 text-sm mb-4" data-id="motion-project-1-desc">Memimpin produksi penuh video animasi 6 menit. Menerjemahkan naskah medis kompleks (pemeriksaan payudara klinis) menjadi visual yang jelas, informatif, dan mudah dipahami oleh audiens awam dari konsep hingga final.</p>
+         <!-- NOTE: GOOGLE DRIVE LINK PLACEHOLDER - Replace # with actual link -->
+         <a href="#" target="_blank" rel="noopener noreferrer" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300 transform hover:scale-105 inline-flex items-center gap-2 mx-auto" style="background-color: #202864;" data-id="learn-more-btn"> <span>Lebih Lanjut</span>
+         <a href="https://drive.google.com/file/d/11aJbyadm4jI-qvKjBtd2bcXJ4cH3dcfD/edit" target="_blank" rel="noopener noreferrer" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300 transform hover:scale-105 inline-flex items-center gap-2 mx-auto" style="background-color: #202864;" data-id="learn-more-btn"> <span>Lebih Lanjut</span>
+          <svg class="w-4 h-4" fill="currentColor" viewbox="0 0 20 20"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+          </svg></a>
+        </div>
+       </div>
+       <!-- Project Card 2: Documentary -->
+       <div class="project-card bg-white rounded-xl shadow-lg border border-slate-100 overflow-hidden">
+        <!-- NOTE: Thumbnail Container. -->
+        <img src="images/projects/Pengmas.webp" alt="Thumbnail Proyek Pengabdian Masyarakat" class="w-full h-48 object-cover" loading="lazy">
+        <div class="p-6 text-center">
+         <h4 class="text-lg font-bold text-blue-900 mb-2" data-id="motion-project-2-title">Serial Video Dokumenter (Pengabdian Masyarakat)</h4>
+         <p class="text-slate-600 text-sm mb-4" data-id="motion-project-2-desc">Memproduksi serial video dokumenter yang menangkap esensi program pemberdayaan masyarakat. Mengubah kegiatan lapangan (Labkes Mini, SIGATBC, Ramuan Rajalom) menjadi cerita visual yang kuat dan inspiratif.</p>
+         <!-- NOTE: GOOGLE DRIVE LINK PLACEHOLDER - Replace # with actual link -->
+         <a href="#" target="_blank" rel="noopener noreferrer" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300 transform hover:scale-105 inline-flex items-center gap-2 mx-auto" style="background-color: #202864;" data-id="learn-more-btn"> <span>Lebih Lanjut</span>
+         <a href="https://www.linkedin.com/in/lalu-habib-sasiwimbe-37b02632a/details/projects/?profileUrn=urn%3Ali%3Afsd_profile%3AACoAAFLw7I8BmAuXRzaX39MCGydxUNIrPc1e6gg" target="_blank" rel="noopener noreferrer" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300 transform hover:scale-105 inline-flex items-center gap-2 mx-auto" style="background-color: #202864;" data-id="learn-more-btn"> <span>Lebih Lanjut</span>
+          <svg class="w-4 h-4" fill="currentColor" viewbox="0 0 20 20"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+          </svg></a>
+        </div>
+       </div>
+       <!-- Project Card 3: MENJADI -->
+       <div class="project-card bg-white rounded-xl shadow-lg border border-slate-100 overflow-hidden">
+        <!-- NOTE: Thumbnail Container. -->
+        <img src="images/projects/Menjadi.webp" alt="Thumbnail Proyek MENJADI" class="w-full h-48 object-cover" loading="lazy">
+        <div class="p-6 text-center">
+         <h4 class="text-lg font-bold text-blue-900 mb-2" data-id="motion-project-3-title">Video Animasi "MENJADI" (Pencegahan Diabetes)</h4>
+         <p class="text-slate-600 text-sm mb-4" data-id="motion-project-3-desc">Mengelola siklus produksi penuh untuk video edukasi diabetes. Menerjemahkan faktor risiko dan metode pencegahan yang kompleks menjadi alur cerita animasi yang informatif dan praktis bagi audiens dewasa/lansia.</p>
+         <!-- NOTE: GOOGLE DRIVE LINK PLACEHOLDER - Replace # with actual link -->
+         <a href="#" target="_blank" rel="noopener noreferrer" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300 transform hover:scale-105 inline-flex items-center gap-2 mx-auto" style="background-color: #202864;" data-id="learn-more-btn"> <span>Lebih Lanjut</span>
+         <a href="https://drive.google.com/file/d/1UnOif8iyeP6ddRBO2gCfQHYz__KgzqO4/edit" target="_blank" rel="noopener noreferrer" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300 transform hover:scale-105 inline-flex items-center gap-2 mx-auto" style="background-color: #202864;" data-id="learn-more-btn"> <span>Lebih Lanjut</span>
+          <svg class="w-4 h-4" fill="currentColor" viewbox="0 0 20 20"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+          </svg></a>
+        </div>
+       </div>
+      </div>
+      <!-- Hidden Motion Graphics Projects Container -->
+      <div id="motion-projects-hidden" class="grid md:grid-cols-3 gap-6 mb-6 max-h-0 overflow-hidden transition-all duration-500 ease-in-out opacity-0">
+       <!-- Project Card 4 -->
+       <div class="project-card bg-white rounded-xl shadow-lg border border-slate-100 overflow-hidden">
+        <!-- NOTE: Thumbnail Container. -->
+        <img src="images/projects/Cerdas.webp" alt="Thumbnail Proyek CERDAS" class="w-full h-48 object-cover" loading="lazy">
+        <div class="p-6 text-center">
+         <h4 class="text-lg font-bold text-blue-900 mb-2" data-id="motion-project-4-title">Video Animasi "CERDAS" (Gaya Flipbook)</h4>
+         <p class="text-slate-600 text-sm mb-4" data-id="motion-project-4-desc">Mengelola produksi end-to-end untuk video edukasi pencegahan anemia. Mengeksekusi konsep unik flipbook-style mulai dari naskah, storyboard, hingga menjadi animasi final yang dinamis dan menarik.</p>
+         <!-- NOTE: GOOGLE DRIVE LINK PLACEHOLDER - Replace # with actual link -->
+         <a href="#" target="_blank" rel="noopener noreferrer" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300 transform hover:scale-105 inline-flex items-center gap-2 mx-auto" style="background-color: #202864;" data-id="learn-more-btn"> <span>Lebih Lanjut</span>
+         <a href="https://drive.google.com/file/d/1CZU5CSepl9Izu7G4NtUyjcy1JfDan2KQ/edit" target="_blank" rel="noopener noreferrer" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300 transform hover:scale-105 inline-flex items-center gap-2 mx-auto" style="background-color: #202864;" data-id="learn-more-btn"> <span>Lebih Lanjut</span>
+          <svg class="w-4 h-4" fill="currentColor" viewbox="0 0 20 20"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+          </svg></a>
+        </div>
+       </div>
+       <!-- Project Card 5 -->
+       <div class="project-card bg-white rounded-xl shadow-lg border border-slate-100 overflow-hidden">
+        <!-- NOTE: Thumbnail Container. -->
+        <img src="images/projects/NormalvsSesar.webp" alt="Thumbnail Proyek Normal vs Sesar" class="w-full h-48 object-cover" loading="lazy">
+        <div class="p-6 text-center">
+         <h4 class="text-lg font-bold text-blue-900 mb-2" data-id="motion-project-5-title">Video Animasi "Persalinan Normal vs. Sesar"</h4>
+         <p class="text-slate-600 text-sm mb-4" data-id="motion-project-5-desc">Meneliti topik, menyusun konsep naratif, dan menulis naskah untuk video animasi 3 menit. Menggunakan gaya bahasa non-formal untuk memberdayakan ibu hamil dengan informasi yang akurat dan berimbang.</p>
+         <!-- NOTE: GOOGLE DRIVE LINK PLACEHOLDER - Replace # with actual link -->
+         <a href="#" target="_blank" rel="noopener noreferrer" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300 transform hover:scale-105 inline-flex items-center gap-2 mx-auto" style="background-color: #202864;" data-id="learn-more-btn"> <span>Lebih Lanjut</span>
+         <a href="https://drive.google.com/file/d/1N76Qkv0ABbApmwAU0LxmsDHIvu6KP5lo/edit" target="_blank" rel="noopener noreferrer" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300 transform hover:scale-105 inline-flex items-center gap-2 mx-auto" style="background-color: #202864;" data-id="learn-more-btn"> <span>Lebih Lanjut</span>
+          <svg class="w-4 h-4" fill="currentColor" viewbox="0 0 20 20"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+          </svg></a>
+        </div>
+       </div>
+       <!-- Project Card 6 -->
+       <div class="project-card bg-white rounded-xl shadow-lg border border-slate-100 overflow-hidden">
+        <!-- NOTE: Thumbnail Container. -->
+        <img src="images/projects/remaja sehat baik.webp" alt="Thumbnail Proyek Remaja Sehat" class="w-full h-48 object-cover" loading="lazy">
+        <div class="p-6 text-center">
+         <h4 class="text-lg font-bold text-blue-900 mb-2" data-id="motion-project-6-title">Video Edukasi "Remaja Sehat Itu Keren"</h4>
+         <p class="text-slate-600 text-sm mb-4" data-id="motion-project-6-desc">Video edukasi 7 menit yang mencakup prinsip gizi seimbang, pesan diet utama, hingga kebutuhan kalori spesifik untuk remaja (termasuk zat besi &amp; folat).</p>
+         <!-- NOTE: GOOGLE DRIVE LINK PLACEHOLDER - Replace # with actual link -->
+         <a href="#" target="_blank" rel="noopener noreferrer" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300 transform hover:scale-105 inline-flex items-center gap-2 mx-auto" style="background-color: #202864;" data-id="learn-more-btn"> <span>Lebih Lanjut</span>
+         <a href="https://drive.google.com/file/d/1g7g0ZvCYtOoosy1glqbg2s1zfRqcAGem/edit" target="_blank" rel="noopener noreferrer" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300 transform hover:scale-105 inline-flex items-center gap-2 mx-auto" style="background-color: #202864;" data-id="learn-more-btn"> <span>Lebih Lanjut</span>
+          <svg class="w-4 h-4" fill="currentColor" viewbox="0 0 20 20"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+          </svg></a>
+        </div>
+       </div>
+      </div>
+      <!-- Toggle Button for Motion Projects -->
+      <div class="text-center"><button id="motion-projects-toggle" onclick="toggleMotionProjects()" class="text-blue-600 font-bold hover:text-blue-700 transition-colors duration-300 cursor-pointer flex items-center gap-2 mx-auto" style="color: #202864;"> <span data-id="show-more-motion-projects">Lebih banyak project Motion Grafis &amp; Video</span>
+        <svg class="w-4 h-4 transition-transform duration-300" id="motion-projects-toggle-icon" fill="currentColor" viewbox="0 0 20 20"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+        </svg></button>
+      </div>
+     </div>
+     <!-- Category: Aplikasi & Website -->
+     <div class="fade-in fade-in-delay-2">
+      <!-- Category Title -->
+      <div class="text-center mb-8">
+       <div class="w-16 h-16 bg-yellow-500 rounded-full flex items-center justify-center mx-auto mb-4">
+         <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" fill="currentColor" class="w-8 h-8 text-blue-900"><path fill-rule="evenodd" d="M2.25 6a3 3 0 0 1 3-3h13.5a3 3 0 0 1 3 3v12a3 3 0 0 1-3 3H5.25a3 3 0 0 1-3-3V6Zm3.97.97a.75.75 0 0 1 1.06 0l2.25 2.25a.75.75 0 0 1 0 1.06l-2.25 2.25a.75.75 0 0 1-1.06-1.06l1.72-1.72-1.72-1.72a.75.75 0 0 1 0-1.06Zm4.28 4.28a.75.75 0 0 0 0 1.5h3a.75.75 0 0 0 0-1.5h-3Z" clip-rule="evenodd"></path></svg>
+       </div>
+       <h3 class="text-2xl font-bold text-blue-900 mb-2" data-id="apps-website-title">Aplikasi &amp; Website</h3>
+       <p class="text-slate-600" data-id="apps-website-subtitle">Solusi digital yang fungsional dan user-friendly</p>
+      </div>
+      <!-- Visible Project Cards -->
+      <div class="grid md:grid-cols-3 gap-6 mb-6">
+       <!-- Project Card 1: TLM Website -->
+       <div class="project-card bg-white rounded-xl shadow-lg border border-slate-100 overflow-hidden">
+        <!-- NOTE: Thumbnail Container. -->
+        <img src="images/projects/website.webp" alt="Thumbnail Proyek Website TLM" class="w-full h-48 object-cover" loading="lazy">
+        <div class="p-6 text-center">
+         <h4 class="text-lg font-bold text-blue-900 mb-2" data-id="app-project-1-title">Desain Ulang UI/UX &amp; Website (Jurusan TLM)</h4>
+         <p class="text-slate-600 text-sm mb-4" data-id="app-project-1-desc">Bertanggung jawab penuh atas desain ulang end-to-end website jurusan. Menerjemahkan kebutuhan akademik menjadi interface (UI/UX) yang modern, responsif, dan fungsional (HTML, CSS, JavaScript).</p>
+         <!-- NOTE: GOOGLE DRIVE LINK PLACEHOLDER - Replace # with actual link -->
+         <a href="https://www.tlmpolkesram.web.id/" target="_blank" rel="noopener noreferrer" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300 transform hover:scale-105 inline-flex items-center gap-2 mx-auto" style="background-color: #202864;" data-id="learn-more-btn"> <span>Lebih Lanjut</span>
+          <svg class="w-4 h-4" fill="currentColor" viewbox="0 0 20 20"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+          </svg></a>
+        </div>
+       </div>
+       <!-- Project Card 2: KalDu PKV -->
+       <div class="project-card bg-white rounded-xl shadow-lg border border-slate-100 overflow-hidden">
+        <!-- NOTE: Thumbnail Container. -->
+        <img src="images/projects/Kaldu Pkv.webp" alt="Thumbnail Proyek Kaldu PKV" class="w-full h-48 object-cover" loading="lazy">
+        <div class="p-6 text-center">
+         <h4 class="text-lg font-bold text-blue-900 mb-2" data-id="app-project-2-title">Aplikasi Mobile "KalDu PKV" (Flutter)</h4>
+         <p class="text-slate-600 text-sm mb-4" data-id="app-project-2-desc">Mendesain dan membangun aplikasi kalkulator risiko kardiovaskular (model WHO). Fokus pada user experience yang mulus, dari dashboard interaktif, kalkulator intuitif, hingga fitur smart advice yang dipersonalisasi.</p>
+         <!-- NOTE: GOOGLE DRIVE LINK PLACEHOLDER - Replace # with actual link -->
+         <a href="https://drive.google.com/drive/folders/1YWiT-XLeFjB8SLMrHbxkxyVQrKX3tjev?usp=drive_link" target="_blank" rel="noopener noreferrer" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300 transform hover:scale-105 inline-flex items-center gap-2 mx-auto" style="background-color: #202864;" data-id="learn-more-btn"> <span>Lebih Lanjut</span>
+          <svg class="w-4 h-4" fill="currentColor" viewbox="0 0 20 20"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+          </svg></a>
+        </div>
+       </div>
+       <!-- Project Card 3: Lab Health Pocket -->
+       <div class="project-card bg-white rounded-xl shadow-lg border border-slate-100 overflow-hidden">
+        <!-- NOTE: Thumbnail Container. -->
+        <img src="images/projects/LHP.webp" alt="Thumbnail Proyek Lab Health Pocket" class="w-full h-48 object-cover" loading="lazy">
+        <div class="p-6 text-center">
+         <h4 class="text-lg font-bold text-blue-900 mb-2" data-id="app-project-3-title">Aplikasi Mobile "Lab Health Pocket" (Kotlin)</h4>
+         <p class="text-slate-600 text-sm mb-4" data-id="app-project-3-desc">Mengubah data lab yang "njlimet" menjadi visual yang mudah dibaca. Aplikasi ini "menerjemahkan" angka (kolesterol, gula darah) menjadi interpretasi simpel (Tinggi, Normal, Rendah) dengan rekomendasi gaya hidup praktis.</p>
+         <!-- NOTE: GOOGLE DRIVE LINK PLACEHOLDER - Replace # with actual link -->
+         <a href="https://drive.google.com/drive/folders/1tFNUdrjFJo-IATcfQmJHwjiPh7Xh6vcv?usp=drive_link" target="_blank" rel="noopener noreferrer" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300 transform hover:scale-105 inline-flex items-center gap-2 mx-auto" style="background-color: #202864;" data-id="learn-more-btn"> <span>Lebih Lanjut</span>
+          <svg class="w-4 h-4" fill="currentColor" viewbox="0 0 20 20"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+          </svg></a>
+        </div>
+       </div>
+      </div>
+      <!-- Hidden Apps & Website Projects Container -->
+      <div id="apps-projects-hidden" class="grid md:grid-cols-3 gap-6 mb-6 max-h-0 overflow-hidden transition-all duration-500 ease-in-out opacity-0">
+       <!-- Project Card 4: SIS -->
+       <div class="project-card bg-white rounded-xl shadow-lg border border-slate-100 overflow-hidden">
+        <!-- NOTE: Thumbnail Container. -->
+        <img src="images/projects/SIS.webp" alt="Thumbnail Proyek SIS" class="w-full h-48 object-cover" loading="lazy">
+        <div class="p-6 text-center">
+         <h4 class="text-lg font-bold text-blue-900 mb-2" data-id="app-project-4-title">Aplikasi Desktop "SIS" (Smart Inventory Management)</h4>
+         <p class="text-slate-600 text-sm mb-4" data-id="app-project-4-desc">Mendesain dan membangun aplikasi database desktop (C#) untuk manajemen inventaris bahan makanan rumah sakit. Solusi digital yang efisien untuk mengatasi kerumitan pencatatan dan pelacakan stok.</p>
+         <!-- NOTE: GOOGLE DRIVE LINK PLACEHOLDER - Replace # with actual link -->
+         <a href="https://www.linkedin.com/in/lalu-habib-sasiwimbe-37b02632a/details/projects/?profileUrn=urn%3Ali%3Afsd_profile%3AACoAAFLw7I8BmAuXRzaX39MCGydxUNIrPc1e6gg" target="_blank" rel="noopener noreferrer" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300 transform hover:scale-105 inline-flex items-center gap-2 mx-auto" style="background-color: #202864;" data-id="learn-more-btn"> <span>Lebih Lanjut</span>
+          <svg class="w-4 h-4" fill="currentColor" viewbox="0 0 20 20"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+          </svg></a>
+        </div>
+       </div>
+      </div>
+      <!-- Toggle Button for Apps Projects -->
+      <div class="text-center"><button id="apps-projects-toggle" onclick="toggleAppsProjects()" class="text-blue-600 font-bold hover:text-blue-700 transition-colors duration-300 cursor-pointer flex items-center gap-2 mx-auto" style="color: #202864;"> <span data-id="show-more-apps-projects">Lebih banyak project Aplikasi &amp; Website</span>
+        <svg class="w-4 h-4 transition-transform duration-300" id="apps-projects-toggle-icon" fill="currentColor" viewbox="0 0 20 20"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+        </svg></button>
+      </div>
+     </div>
+    </div>
+   </div>
+  </section>
+  <!-- Skills & Projects Section End -->
+  <!-- =================================================================== -->
+  <!-- =================================================================== -->
+  <!-- Contact Section Start -->
+  <section id="contact" class="py-20 gradient-bg">
+   <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <div class="fade-in">
+     <!-- Section Title -->
+     <h2 class="text-4xl font-bold text-white mb-4" id="contact-title" data-id="contact-title">Hubungi Saya</h2>
+     <div class="w-24 h-1 bg-yellow-500 mx-auto mb-8"></div>
+     <p class="text-xl text-blue-100 mb-12" data-id="contact-description">Siap untuk berkolaborasi dalam proyek digital yang inovatif? Mari berdiskusi!</p>
+     <!-- Contact Cards -->
+     <div class="grid md:grid-cols-3 gap-8 mb-12">
+      <!-- Contact Card: Email -->
+      <div class="bg-white/10 backdrop-blur-md rounded-2xl p-6 card-hover">
+       <div class="w-12 h-12 bg-yellow-500 rounded-full flex items-center justify-center mx-auto mb-4">
+        <svg class="w-6 h-6 text-blue-900" fill="currentColor" viewbox="0 0 20 20"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" /> <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+        </svg>
+       </div>
+       <h3 class="text-lg font-semibold text-white mb-2" data-id="contact-email-label">Email</h3>
+       <div class="marquee-container mb-4">
+        <p class="text-blue-100" id="contact-email" data-text="emailkerjaannyahabib@gmail.com">emailkerjaannyahabib@gmail.com</p>
+       </div><a href="mailto:emailkerjaannyahabib@gmail.com" class="bg-yellow-500 hover:bg-yellow-600 text-blue-900 px-4 py-2 rounded-full font-medium transition-all duration-300 transform hover:scale-105 text-sm" data-id="email-button"> Kontak melalui Email </a>
+      </div>
+      <!-- Contact Card: Website -->
+      <div class="bg-white/10 backdrop-blur-md rounded-2xl p-6 card-hover">
+       <div class="w-12 h-12 bg-yellow-500 rounded-full flex items-center justify-center mx-auto mb-4">
+         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+  <path d="M15.75 8.25a.75.75 0 0 1 .75.75c0 1.12-.492 2.126-1.27 2.812a.75.75 0 1 1-.992-1.124A2.243 2.243 0 0 0 15 9a.75.75 0 0 1 .75-.75Z" />
+  <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25ZM4.575 15.6a8.25 8.25 0 0 0 9.348 4.425 1.966 1.966 0 0 0-1.84-1.275.983.983 0 0 1-.97-.822l-.073-.437c-.094-.565.25-1.11.8-1.267l.99-.282c.427-.123.783-.418.982-.816l.036-.073a1.453 1.453 0 0 1 2.328-.377L16.5 15h.628a2.25 2.25 0 0 1 1.983 1.186 8.25 8.25 0 0 0-6.345-12.4c.044.262.18.503.389.676l1.068.89c.442.369.535 1.01.216 1.49l-.51.766a2.25 2.25 0 0 1-1.161.886l-.143.048a1.107 1.107 0 0 0-.57 1.664c.369.555.169 1.307-.427 1.605L9 13.125l.423 1.059a.956.956 0 0 1-1.652.928l-.679-.906a1.125 1.125 0 0 0-1.906.172L4.575 15.6Z" clip-rule="evenodd" />
+</svg>
+       </div>
+       <h3 class="text-lg font-semibold text-white mb-2" data-id="contact-website-label">Website</h3>
+       <p class="text-blue-100 mb-4" id="contact-website">LHSStudio.web.id</p><a href="https://LHSStudio.web.id" target="_blank" rel="noopener noreferrer" class="bg-gray-400 cursor-not-allowed text-gray-800 px-4 py-2 rounded-full font-medium text-sm" data-id="website-button"> Coming Soon </a>
+      </div>
+      <!-- Contact Card: WhatsApp -->
+      <div class="bg-white/10 backdrop-blur-md rounded-2xl p-6 card-hover">
+       <div class="w-12 h-12 bg-yellow-500 rounded-full flex items-center justify-center mx-auto mb-4">
+        <svg class="w-6 h-6 text-blue-900" fill="currentColor" viewbox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488" />
+        </svg>
+       </div>
+       <h3 class="text-lg font-semibold text-white mb-2" data-id="contact-whatsapp-label">WhatsApp</h3>
+       <p class="text-blue-100 mb-4" id="contact-phone">087865240934</p><a href="https://wa.me/6287865240934" target="_blank" rel="noopener noreferrer" class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-full font-medium transition-all duration-300 transform hover:scale-105 text-sm" data-id="whatsapp-button"> Kontak melalui WhatsApp </a>
+      </div>
+     </div>
+     <!-- Social Media Links -->
+     <div class="flex justify-center gap-6"><a href="https://www.linkedin.com/in/lalu-habib-sasiwimbe-37b02632a/" target="_blank" rel="noopener noreferrer" class="w-12 h-12 bg-white/10 backdrop-blur-md rounded-full flex items-center justify-center hover:bg-white/20 transition-all duration-300 transform hover:scale-110">
+       <svg class="w-6 h-6 text-white" fill="currentColor" viewbox="0 0 93.06 93.06"><g><g><path d="M11.185,0.08C5.004,0.08,0.001,5.092,0,11.259c0,6.173,5.003,11.184,11.186,11.184c6.166,0,11.176-5.011,11.176-11.184			C22.362,5.091,17.351,0.08,11.185,0.08z"></path><rect x="1.538" y="30.926" width="19.287" height="62.054"></rect><path d="M69.925,29.383c-9.382,0-15.673,5.144-18.248,10.022h-0.258v-8.479H32.921H32.92v62.053h19.27V62.281			c0-8.093,1.541-15.932,11.575-15.932c9.89,0,10.022,9.256,10.022,16.451v30.178H93.06V58.942			C93.06,42.235,89.455,29.383,69.925,29.383z"></path></g></g></svg></a>
+       </svg></a> <a href="https://www.instagram.com/lhsdesign_" target="_blank" rel="noopener noreferrer" class="w-12 h-12 bg-white/10 backdrop-blur-md rounded-full flex items-center justify-center hover:bg-white/20 transition-all duration-300 transform hover:scale-110">
+       <svg class="w-6 h-6 text-white" fill="currentColor" viewbox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+       </svg></a> <a href="https://threads.net/@lalu.habib" target="_blank" rel="noopener noreferrer" class="w-12 h-12 bg-white/10 backdrop-blur-md rounded-full flex items-center justify-center hover:bg-white/20 transition-all duration-300 transform hover:scale-110">
+       <svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 193.92 224.21" class="w-6 h-6 text-white" fill="currentColor"><g id="Layer_1-2" data-name="Layer 1"><path d="M106.92,0c20.93,2.31,41.06,7.91,57.47,21.93,14.95,12.77,23.52,30.37,29.53,48.74l-18.97,4.99c-11.19-44.85-52.5-62.3-96.08-54.31-38.18,7-56.61,40.41-58.99,76.67-4.11,62.56,19.25,111.42,89.53,106.06,31.27-2.39,66.86-29.04,52.69-63.38-2.09-5.05-8.73-14.05-13.71-16.23-2.48-1.08-2.51,6.39-2.94,7.97-16.57,61.54-100.1,42.24-89.28-7.25,6.63-30.3,46.91-32.24,71.74-28.63-2.31-27.28-38.73-33.34-53.57-12.86l-15.99-10.01c15.65-28.34,64.29-28.51,80.98-.93,5.92,9.78,6.83,18.82,9.13,29.73,65.56,34.53,34.2,111.47-32.17,120.4C32.31,234.19-6.65,171.49.93,95.09,6.21,41.76,34.49,3.72,90.92,0h16ZM127.86,116.54c-13.09-3.21-50.03-4.52-52.87,13.45-3.2,20.18,22.06,25.07,36.93,18.85,11.32-4.73,16.4-20.93,15.94-32.3Z" />
+       </svg></a> <a href="https://threads.net/@lalu.habib" target="_blank" rel="noopener noreferrer" class="w-12 h-12 bg-white/10 backdrop-blur-md rounded-full flex items-center justify-center hover:bg-white/20 transition-all duration-300 transform hover:scale-110">
+       <svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 260.11 245.75" class="w-6 h-6 text-white" fill="currentColor"><defs><style>.cls-1{fill:#ffffff;}</style></defs><g id="Layer_1-2" data-name="Layer 1"><g><path class="cls-1" d="M2.14,105.69C19.57-17.96,207.78-42.43,249.97,82.35c8.53,25.22,13.92,123.91,6.93,147.59-6.17,20.9-40.71,15.66-40.71,6.27v-104.42c0-1.75-6.47-30.41-7.72-34.05-20.07-58.71-101.04-71.95-141.25-26.16-3.56,4.05-18.1,26.66-18.1,28.89v130.52c0,16.53-46.99,16.53-46.99,0,0-36.86-4.81-91.21,0-125.3Z"></path><path class="cls-1" d="M169.2,238.82c-2.59,4.1-73.48,20.37-78.55-18.03-5.16-39.06-6.23-131.93,57.59-104.53,2.52,1.08,20.96,19.28,20.96,20.76,0,15.05,2.72,97.5,0,101.8Z"></path></g></g></svg></a>
+     </div>
+    </div>
+   </div>
+  </section>
+  <!-- Contact Section End -->
+  <!-- =================================================================== -->
+  <!-- =================================================================== -->
+  <!-- Footer Start -->
+  <footer class="bg-blue-900 text-white py-8" style="background-color: #202864;">
+   <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <p class="text-blue-200" data-id="footer-text">© 2025 Lalu Habib Sasiwimbe. LHSCode.</p>
+   </div>
+  </footer>
+  <!-- Footer End -->
+  <!-- =================================================================== -->
+  <script src="script.js"></script>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'996a2c8c97b39998',t:'MTc2MTgxOTU2My4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

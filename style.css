@@ -1,0 +1,514 @@
+body {
+            box-sizing: border-box;
+        }
+        
+        * {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, #202864 0%, #4f53eb 50%, #4f53eb 100%);
+        }
+        
+        .card-hover {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+        }
+        
+        /* Smooth Animation Base Classes */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+        
+        .fade-in.animate-forward {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        .fade-in.animate-reverse {
+            opacity: 0;
+            transform: translateY(30px);
+        }
+        
+        .slide-in-left {
+            opacity: 0;
+            transform: translateX(-80px);
+            transition: all 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+        
+        .slide-in-left.animate-forward {
+            opacity: 1;
+            transform: translateX(0);
+        }
+        
+        .slide-in-left.animate-reverse {
+            opacity: 0;
+            transform: translateX(-80px);
+        }
+        
+        .slide-in-right {
+            opacity: 0;
+            transform: translateX(80px);
+            transition: all 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+        
+        .slide-in-right.animate-forward {
+            opacity: 1;
+            transform: translateX(0);
+        }
+        
+        .slide-in-right.animate-reverse {
+            opacity: 0;
+            transform: translateX(80px);
+        }
+        
+        .scale-in {
+            opacity: 0;
+            transform: scale(0.7) rotate(-5deg);
+            transition: all 0.8s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+        
+        .scale-in.animate-forward {
+            opacity: 1;
+            transform: scale(1) rotate(0deg);
+        }
+        
+        .scale-in.animate-reverse {
+            opacity: 0;
+            transform: scale(0.7) rotate(-5deg);
+        }
+        
+        .bounce-in {
+            opacity: 0;
+            transform: translateY(40px) scale(0.8);
+            transition: all 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        }
+        
+        .bounce-in.animate-forward {
+            opacity: 1;
+            transform: translateY(0) scale(1);
+        }
+        
+        .bounce-in.animate-reverse {
+            opacity: 0;
+            transform: translateY(40px) scale(0.8);
+        }
+        
+        .skill-item {
+            opacity: 0;
+            transform: translateY(30px) scale(0.95);
+            transition: all 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+        
+        .skill-item.animate-forward {
+            opacity: 1;
+            transform: translateY(0) scale(1);
+        }
+        
+        .skill-item.animate-reverse {
+            opacity: 0;
+            transform: translateY(30px) scale(0.95);
+        }
+        
+        /* Staggered Animation Delays */
+        .fade-in-delay-1 { transition-delay: 0.1s; }
+        .fade-in-delay-2 { transition-delay: 0.2s; }
+        .fade-in-delay-3 { transition-delay: 0.3s; }
+        
+        .floating {
+            animation: floating 3s ease-in-out infinite;
+        }
+        
+        @keyframes floating {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+        
+        .skill-bar {
+            height: 6px;
+            background: linear-gradient(90deg, #fbbf24, #f59e0b);
+            border-radius: 3px;
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+        
+        .skill-bar.animate-forward {
+            transform: scaleX(1);
+        }
+        
+        .skill-bar.animate-reverse {
+            transform: scaleX(0);
+        }
+        
+        .text-gradient {
+            background: linear-gradient(135deg, #fbbf24, #f59e0b);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .nav-link {
+            position: relative;
+            transition: color 0.3s ease;
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -4px;
+            left: 0;
+            background: #fbbf24;
+            transition: width 0.3s ease;
+        }
+        
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        
+        /* Tech & Skill Icons */
+        .tech-icon, .skill-icon {
+            position: relative;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 2.5rem;
+            height: 2.5rem;
+            background: rgba(255, 255, 255, 0.8);
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            border-radius: 0.5rem;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            cursor: pointer;
+        }
+        
+        .tech-icon:hover, .skill-icon:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px -8px rgba(0, 0, 0, 0.3);
+            background: rgba(255, 255, 255, 1);
+        }
+        
+        .tech-icon-sm, .skill-icon-sm {
+            position: relative;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 2rem;
+            height: 2rem;
+            background: rgba(255, 255, 255, 0.8);
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            border-radius: 0.375rem;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            cursor: pointer;
+        }
+        
+        .tech-icon-sm:hover, .skill-icon-sm:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 4px 15px -4px rgba(0, 0, 0, 0.3);
+            background: rgba(255, 255, 255, 1);
+        }
+        
+        /* Expanding Box Styles - Tech Icons (Right Side) */
+        .tech-icon, .tech-icon-sm {
+            overflow: visible;
+            position: relative;
+        }
+        
+        .tech-icon::after, .tech-icon-sm::after {
+            content: attr(data-tooltip);
+            position: absolute;
+            top: 50%;
+            left: 100%;
+            transform: translateY(-50%);
+            background: #202864;
+            color: white;
+            padding: 0.5rem 0.75rem;
+            border-radius: 0.375rem;
+            font-size: 0.75rem;
+            font-weight: 500;
+            white-space: nowrap;
+            width: auto;
+            max-width: 0;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            z-index: 20;
+            pointer-events: none;
+            overflow: hidden;
+            margin-left: 0.5rem;
+            text-align: center;
+        }
+        
+        .tech-icon:hover::after, .tech-icon-sm:hover::after {
+            max-width: 200px;
+            opacity: 1;
+            visibility: visible;
+        }
+
+        /* Expanding Box Styles - Skill Icons (Left Side) */
+        .skill-icon::after, .skill-icon-sm::after {
+            content: attr(data-tooltip);
+            position: absolute;
+            top: 50%;
+            right: 100%;
+            transform: translateY(-50%);
+            background: #fbbf24;
+            color: #202864;
+            padding: 0.5rem 0.75rem;
+            border-radius: 0.375rem;
+            font-size: 0.75rem;
+            font-weight: 500;
+            white-space: nowrap;
+            width: auto;
+            max-width: 0;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            z-index: 20;
+            pointer-events: none;
+            overflow: hidden;
+            margin-right: 0.5rem;
+            text-align: center;
+        }
+        
+        .skill-icon:hover::after, .skill-icon-sm:hover::after {
+            max-width: 200px;
+            opacity: 1;
+            visibility: visible;
+        }
+
+        /* Smooth Icon Container with Expanding Space */
+        .tech-icon-container, .skill-icon-container {
+            display: flex;
+            gap: 0.5rem;
+            transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            align-items: center;
+        }
+
+        /* Dynamic icon movement based on expanding box size */
+        .tech-icon, .tech-icon-sm {
+            --box-width: 0px;
+        }
+        
+        .tech-icon:hover, .tech-icon-sm:hover {
+            --box-width: calc(var(--tooltip-width, 120px) + 1.5rem);
+        }
+
+        /* Tech Icons - Only icons to the RIGHT of hovered icon move right */
+        .tech-icon:hover ~ .tech-icon,
+        .tech-icon:hover ~ .tech-icon-sm,
+        .tech-icon-sm:hover ~ .tech-icon,
+        .tech-icon-sm:hover ~ .tech-icon-sm {
+            transform: translateX(calc(var(--tooltip-width, 120px) + 1.5rem));
+            transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+
+        /* Skill Icons - Only icons to the LEFT of hovered icon move left */
+        .skill-icon-container:hover .skill-icon:not(:hover),
+        .skill-icon-container:hover .skill-icon-sm:not(:hover) {
+            transform: translateX(calc(-1 * (var(--tooltip-width, 120px) + 1.5rem)));
+            transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+        
+        /* Reset transform for icons after the hovered one in skill container */
+        .skill-icon:hover ~ .skill-icon,
+        .skill-icon:hover ~ .skill-icon-sm,
+        .skill-icon-sm:hover ~ .skill-icon,
+        .skill-icon-sm:hover ~ .skill-icon-sm {
+            transform: translateX(0) !important;
+        }
+
+        /* Container hover effects for smooth group animation */
+        .tech-icon-container:hover .tech-icon:not(:hover),
+        .tech-icon-container:hover .tech-icon-sm:not(:hover) {
+            opacity: 0.6;
+        }
+
+        .skill-icon-container:hover .skill-icon:not(:hover),
+        .skill-icon-container:hover .skill-icon-sm:not(:hover) {
+            opacity: 0.6;
+        }
+
+        /* Enhanced hover state for the active icon */
+        .tech-icon:hover, .tech-icon-sm:hover,
+        .skill-icon:hover, .skill-icon-sm:hover {
+            transform: translateY(-2px) scale(1.05);
+            box-shadow: 0 8px 25px -8px rgba(0, 0, 0, 0.3);
+            background: rgba(255, 255, 255, 1);
+            z-index: 30;
+        }
+
+        /* Language Loading Overlay */
+        #language-loading {
+            backdrop-filter: blur(8px);
+        }
+
+        /* Skills Toggle Animation */
+        #hidden-skills {
+            opacity: 0;
+            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        #hidden-skills.expanded {
+            opacity: 1;
+        }
+
+        /* Language Switch Smooth Animation */
+        .lang-switch-btn {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        /* Translate Icon Animation */
+        .translate-icon-animate {
+            animation: translateBounce 1.5s ease-in-out infinite;
+        }
+
+        @keyframes translateBounce {
+            0%, 100% { 
+                transform: translateY(0px) rotate(0deg); 
+            }
+            25% { 
+                transform: translateY(-3px) rotate(-2deg); 
+            }
+            50% { 
+                transform: translateY(0px) rotate(2deg); 
+            }
+            75% { 
+                transform: translateY(-2px) rotate(-1deg); 
+            }
+        }
+
+        /* Counter Animation */
+        .counter-animation {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+
+        .counter-animation.animate-forward {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Animated Background for Stat Cards */
+        .stat-card-bg {
+            position: absolute;
+            inset: 0;
+            overflow: hidden;
+            z-index: 0;
+        }
+
+        .icon-pattern, .icon-pattern::before {
+            position: absolute;
+            width: 200%;
+            height: 200%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            content: '';
+        }
+
+        .icon-pattern {
+            top: -100%;
+            left: -100%;
+            animation: moveDiagonal 20s linear infinite;
+        }
+
+        .pattern-icon {
+            width: 3rem;
+            height: 3rem;
+            opacity: 0.05;
+            transform: rotate(-30deg); /* Adjusted rotation for better diagonal feel */
+            margin: 0.5rem;
+            color: #ffffff;
+            flex-shrink: 0; /* Prevent icons from shrinking */
+        }
+
+        @keyframes moveDiagonal {
+            0% {
+                transform: translate(0, 0);
+            }
+            100% {
+                transform: translate(50%, 50%);
+            }
+        }
+
+        /* Client Logo Styles */
+        .client-logo {
+            position: relative;
+            color: #9ca3af; /* gray-400 */
+            filter: grayscale(100%) opacity(60%);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .client-logo:hover {
+            color: #3b82f6; /* blue-500, can be adjusted */
+            filter: grayscale(0%) opacity(100%);
+            transform: scale(1.1) translateY(-4px);
+        }
+
+        .client-logo::after {
+            content: attr(data-tooltip);
+            position: absolute;
+            bottom: 110%;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #202864;
+            color: white;
+            padding: 0.4rem 0.8rem;
+            border-radius: 0.375rem;
+            font-size: 0.8rem;
+            font-weight: 600;
+            white-space: nowrap;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            pointer-events: none;
+            z-index: 10; /* Add z-index to ensure it's on top */
+        }
+
+        .client-logo:hover::after {
+            opacity: 1;
+            visibility: visible;
+            bottom: 120%;
+        }
+
+        /* Marquee effect for long email */
+        .marquee-container {
+            width: 100%;
+            overflow: hidden;
+            position: relative;
+            height: 1.5rem; /* Adjust height to fit text line */
+        }
+
+        .marquee-container p {
+            position: absolute;
+            white-space: nowrap;
+            will-change: transform;
+            animation: marquee 15s linear infinite;
+        }
+
+        .marquee-container p::after {
+            content: attr(data-text);
+            position: absolute;
+            left: 100%;
+            top: 0;
+            padding-left: 2rem; /* Space between repeated text */
+        }
+
+        @keyframes marquee {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(calc(-100% - 2rem)); /* Move by its own width + padding */
+            }
+        }
